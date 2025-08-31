@@ -1,0 +1,268 @@
+{
+  "summary": {
+    "total_images": 16,
+    "total_original_size_mb": 5.02532958984375,
+    "total_optimized_size_mb": 0.6615705490112305,
+    "total_savings_mb": 4.3637590408325195,
+    "total_savings_percent": 86.83528040930345,
+    "timestamp": "2025-08-30 21:11:36"
+  },
+  "images": [
+    {
+      "original_path": "../public/images/01_brand/logo_hiperliga_white.png",
+      "category": "01_brand",
+      "original_size": 16534,
+      "optimized_size": 8528,
+      "savings_percent": 48.42143461957179,
+      "original_dimensions": "500x156",
+      "optimized_dimensions": "400x124",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {}
+    },
+    {
+      "original_path": "../public/images/01_brand/logo_hiperliga.png",
+      "category": "01_brand",
+      "original_size": 40893,
+      "optimized_size": 7647,
+      "savings_percent": 81.29997799134327,
+      "original_dimensions": "500x156",
+      "optimized_dimensions": "400x124",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {}
+    },
+    {
+      "original_path": "../public/images/03_products/image_11.jpg",
+      "category": "03_products",
+      "original_size": 334590,
+      "optimized_size": 113069,
+      "savings_percent": 66.20670073821692,
+      "original_dimensions": "1470x980",
+      "optimized_dimensions": "800x533",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/image_11-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/image_11-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/image_11-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/image_11-tablet.webp",
+        "desktop_jpg": "../public/images/03_products/image_11-desktop.jpg",
+        "desktop_webp": "../public/images/03_products/image_11-desktop.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/faq-mockup.png",
+      "category": "03_products",
+      "original_size": 436014,
+      "optimized_size": 67274,
+      "savings_percent": 84.57067892315384,
+      "original_dimensions": "568x519",
+      "optimized_dimensions": "568x519",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {}
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/hiperliga-1.png",
+      "category": "03_products",
+      "original_size": 264488,
+      "optimized_size": 61084,
+      "savings_percent": 76.90481231662683,
+      "original_dimensions": "500x500",
+      "optimized_dimensions": "500x500",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {}
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/versatilidade-usar.png",
+      "category": "03_products",
+      "original_size": 706391,
+      "optimized_size": 31249,
+      "savings_percent": 95.57624601672445,
+      "original_dimensions": "1200x1200",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/versatilidade-usar-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/versatilidade-usar-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/versatilidade-usar-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/versatilidade-usar-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/100-sustentavel-usar.png",
+      "category": "03_products",
+      "original_size": 781212,
+      "optimized_size": 54896,
+      "savings_percent": 92.97297020527078,
+      "original_dimensions": "1200x1200",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/100-sustentavel-usar-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/100-sustentavel-usar-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/100-sustentavel-usar-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/100-sustentavel-usar-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/02.webp",
+      "category": "03_products",
+      "original_size": 57702,
+      "optimized_size": 43177,
+      "savings_percent": 25.17243769713355,
+      "original_dimensions": "900x900",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/02-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/02-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/02-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/02-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/3-KG-800.png",
+      "category": "03_products",
+      "original_size": 628682,
+      "optimized_size": 37134,
+      "savings_percent": 94.093357213981,
+      "original_dimensions": "1200x1200",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/3-KG-800-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/3-KG-800-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/3-KG-800-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/3-KG-800-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/40-KG-800.png",
+      "category": "03_products",
+      "original_size": 367218,
+      "optimized_size": 38418,
+      "savings_percent": 89.53809453784946,
+      "original_dimensions": "800x800",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/40-KG-800-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/40-KG-800-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/40-KG-800-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/40-KG-800-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/economia-de-espaco-e-material-usar.png",
+      "category": "03_products",
+      "original_size": 403699,
+      "optimized_size": 34871,
+      "savings_percent": 91.3621287147107,
+      "original_dimensions": "1200x1200",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/economia-de-espaco-e-material-usar-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/economia-de-espaco-e-material-usar-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/economia-de-espaco-e-material-usar-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/economia-de-espaco-e-material-usar-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/hiperliga_produto_1.jpeg",
+      "category": "03_products",
+      "original_size": 87236,
+      "optimized_size": 36571,
+      "savings_percent": 58.07808702829107,
+      "original_dimensions": "1200x1200",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/hiperliga_produto_1-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/hiperliga_produto_1-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/hiperliga_produto_1-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/hiperliga_produto_1-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/25-0KG-800.png",
+      "category": "03_products",
+      "original_size": 549818,
+      "optimized_size": 53684,
+      "savings_percent": 90.2360417447228,
+      "original_dimensions": "800x800",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/25-0KG-800-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/25-0KG-800-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/25-0KG-800-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/25-0KG-800-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/01.webp",
+      "category": "03_products",
+      "original_size": 85876,
+      "optimized_size": 53624,
+      "savings_percent": 37.55647678047417,
+      "original_dimensions": "900x900",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/01-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/01-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/01-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/01-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/desempenho-e-durabilidade-usar-1024x1024.png",
+      "category": "03_products",
+      "original_size": 334717,
+      "optimized_size": 28327,
+      "savings_percent": 91.53702978934443,
+      "original_dimensions": "1024x1024",
+      "optimized_dimensions": "600x600",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/desempenho-e-durabilidade-usar-1024x1024-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/desempenho-e-durabilidade-usar-1024x1024-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/desempenho-e-durabilidade-usar-1024x1024-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/desempenho-e-durabilidade-usar-1024x1024-tablet.webp"
+      }
+    },
+    {
+      "original_path": "../public/images/03_products/hiperliga/pattern-bg2.jpg",
+      "category": "03_products",
+      "original_size": 174370,
+      "optimized_size": 24154,
+      "savings_percent": 86.14784653323393,
+      "original_dimensions": "1920x535",
+      "optimized_dimensions": "800x222",
+      "webp_created": true,
+      "avif_created": false,
+      "responsive_versions": {
+        "mobile_jpg": "../public/images/03_products/hiperliga/pattern-bg2-mobile.jpg",
+        "mobile_webp": "../public/images/03_products/hiperliga/pattern-bg2-mobile.webp",
+        "tablet_jpg": "../public/images/03_products/hiperliga/pattern-bg2-tablet.jpg",
+        "tablet_webp": "../public/images/03_products/hiperliga/pattern-bg2-tablet.webp",
+        "desktop_jpg": "../public/images/03_products/hiperliga/pattern-bg2-desktop.jpg",
+        "desktop_webp": "../public/images/03_products/hiperliga/pattern-bg2-desktop.webp"
+      }
+    }
+  ]
+}

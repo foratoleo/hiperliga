@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />		<title>Página não encontrada &#8211; Hiperliga®</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link rel="alternate" type="application/rss+xml" title="Feed para Hiperliga® &raquo;" href="https://hiperliga.com.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Hiperliga® &raquo;" href="https://hiperliga.com.br/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hiperliga.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://hiperliga.com.br/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='joinchat-button-style-inline-css' type='text/css'>
+.wp-block-joinchat-button{border:none!important;text-align:center}.wp-block-joinchat-button figure{display:table;margin:0 auto;padding:0}.wp-block-joinchat-button figcaption{font:normal normal 400 .6em/2em var(--wp--preset--font-family--system-font,sans-serif);margin:0;padding:0}.wp-block-joinchat-button .joinchat-button__qr{background-color:#fff;border:6px solid #25d366;border-radius:30px;box-sizing:content-box;display:block;height:200px;margin:auto;overflow:hidden;padding:10px;width:200px}.wp-block-joinchat-button .joinchat-button__qr canvas,.wp-block-joinchat-button .joinchat-button__qr img{display:block;margin:auto}.wp-block-joinchat-button .joinchat-button__link{align-items:center;background-color:#25d366;border:6px solid #25d366;border-radius:30px;display:inline-flex;flex-flow:row nowrap;justify-content:center;line-height:1.25em;margin:0 auto;text-decoration:none}.wp-block-joinchat-button .joinchat-button__link:before{background:transparent var(--joinchat-ico) no-repeat center;background-size:100%;content:"";display:block;height:1.5em;margin:-.75em .75em -.75em 0;width:1.5em}.wp-block-joinchat-button figure+.joinchat-button__link{margin-top:10px}@media (orientation:landscape)and (min-height:481px),(orientation:portrait)and (min-width:481px){.wp-block-joinchat-button.joinchat-button--qr-only figure+.joinchat-button__link{display:none}}@media (max-width:480px),(orientation:landscape)and (max-height:480px){.wp-block-joinchat-button figure{display:none}}
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://hiperliga.com.br/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=10.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=10.0.3' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=10.0.3' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='brands-styles-css' href='https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/css/brands.css?ver=10.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/bootstrap.min.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fontAwesome-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/fontAwesome.min.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='kriate-wp-developers-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/wp-developer.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/jquery.fancybox.min.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='kriate-ttstyles-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/ttstyles.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='perfect-scrollbar-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/perfect-scrollbar.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/animate.min.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-select-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/bootstrap-select.min.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='touchspin-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/jquery-touchspin.min.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='kriate-woocommerce-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/woocommerce.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='kriate-default-css' href='https://hiperliga.com.br/wp-content/themes/kriate/style.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='kriate-responsive-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/responsive.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='flaticons-css' href='https://hiperliga.com.br/wp-content/themes/kriate/assets/css/flaticon.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://hiperliga.com.br/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.30.3' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://hiperliga.com.br/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.30.3' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://hiperliga.com.br/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.27.4' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://hiperliga.com.br/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.30.3' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://hiperliga.com.br/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.30.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-9-css' href='https://hiperliga.com.br/wp-content/uploads/elementor/css/post-9.css?ver=1756580367' type='text/css' media='all' />
+<link rel='stylesheet' id='mae-widgets-css' href='https://hiperliga.com.br/wp-content/plugins/masterlayer-addons-for-elementor/assets/css/mae-widgets.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1434-css' href='https://hiperliga.com.br/wp-content/uploads/elementor/css/post-1434.css?ver=1756580367' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1601-css' href='https://hiperliga.com.br/wp-content/uploads/elementor/css/post-1601.css?ver=1756580367' type='text/css' media='all' />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7COpen%20Sans:300,400,500,600,700,800,300italic,400italic,500italic,600italic,700italic,800italic&#038;display=swap&#038;ver=1754167800" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7COpen%20Sans:300,400,500,600,700,800,300italic,400italic,500italic,600italic,700italic,800italic&#038;display=swap&#038;ver=1754167800" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7COpen%20Sans:300,400,500,600,700,800,300italic,400italic,500italic,600italic,700italic,800italic&#038;display=swap&#038;ver=1754167800" /></noscript><link rel='stylesheet' id='elementor-gf-local-chivo-css' href='https://hiperliga.com.br/wp-content/uploads/elementor/google-fonts/css/chivo.css?ver=1744010451' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://hiperliga.com.br/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1744010455' type='text/css' media='all' />
+<script type="text/javascript" src="https://hiperliga.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.0.3" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrinho","cart_url":"https:\/\/hiperliga.com.br","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.0.3" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.0.3" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_password_show":"Mostrar senha","i18n_password_hide":"Ocultar senha"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.0.3" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://hiperliga.com.br/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hiperliga.com.br/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.2" />
+<meta name="generator" content="WooCommerce 10.0.3" />
+<meta name="generator" content="Redux 4.5.7" />
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to automatic -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"404-error"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TM6BN96D');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><style id="stylesheet">body{background:url(https://hiperliga.com.br/wp-content/themes/kriate/framework/images/pattern/pattern-5.png) repeat;}.thm-bg,
+.thm-layer:before,
+.header-right-btns > a.get-quote,
+.feat-caro > button.slick-arrow:hover:before,
+.feat-caro > button.slick-arrow:focus:before,
+.video-btn:hover > span, 
+.video-btn:focus > span,
+.about-image > span,
+.proj-box:hover .proj-info,
+.solutions-list > li:hover > i,
+.sec-title-inner2 > h2 i:before,
+.sec-title-inner2 > h2 i:after,
+.slick-dots > li.slick-active button,
+.black-layer .slick-dots > li.slick-active button,
+.blue-layer .slick-dots > li.slick-active button,
+.dark-layer .slick-dots > li.slick-active button,
+.dark-layer2 .slick-dots > li.slick-active button,
+.dark-layer3 .slick-dots > li.slick-active button,
+.feat-caro .slick-dots > li.slick-active button,
+header.style2 .header-right-btns > a.get-quote,
+.team-social > a,
+.about-image > a:hover,
+.about-image > a:focus,
+.post-detail-gallery-video-box > a:hover,
+.post-detail-gallery-video-box > a:focus,
+.tagclouds > a:before,
+.widget2 ul li > a:after,
+.widget-video-box > a,
+.widget-video-box > a:before,
+.widget-video-box > a:after,
+.tagclouds > a:before,
+.shop-img:before,
+.shop-detail-tabs ul.nav-tabs li.nav-item a.nav-link.active,
+.shop-detail-tabs ul.nav-tabs li.nav-item a.nav-link:hover,
+.shop-detail-tabs ul.nav-tabs li.nav-item a.nav-link:focus,
+.simple-btn.bg-color1:hover,
+.simple-btn.bg-color1:focus,
+.slick-slider:not(.feat-caro) > button.slick-arrow:hover:before,
+.slick-slider:not(.feat-caro) > button.slick-arrow:focus:before,
+.rspn-scil > a:hover,
+.rspn-scil > a:focus,
+.rspn-mnu-btn:hover,
+.rspn-mnu-btn:focus,
+.rspn-mnu-cls:hover,
+.rspn-mnu-cls:focus,
+.social-links > a:hover,
+.social-links > a:focus,
+/* .getin-touch-blob:before,
+.getin-touch-blob:after, */
+.bootstrap-select .dropdown-menu li a.dropdown-item.active, 
+.bootstrap-select .dropdown-menu li a.dropdown-item:active,
+.bootstrap-select .dropdown-menu li a:hover,
+.bootstrap-select .dropdown-menu li a:focus,
+.serv-box2:hover:before,
+header.style2 .social-links > a:hover,
+header.style2 .social-links > a:focus, .solutions-list > li.active i,
+.wp-block-button__link:hover,
+.wp-block-button__link:focus,
+.calendar_wrap > table tbody td#today,
+table#wp-calendar tbody td#today,
+.post-password-form input:not([type="password"]):hover,
+.post-password-form input:not([type="password"]):focus,
+.woocommerce-page.woocommerce nav.woocommerce-pagination ul li a:hover, 
+.woocommerce-page.woocommerce nav.woocommerce-pagination ul li a:focus, 
+.woocommerce-page.woocommerce nav.woocommerce-pagination ul li span,
+.woocommerce ul.products li.product .onsale,
+.woocommerce ul.products li.product .button, 
+.woocommerce ul.products li.product .added_to_cart,
+.woocommerce #content .quantity .bootstrap-touchspin > span button:hover, 
+.woocommerce .quantity .bootstrap-touchspin > span button:hover,
+.woocommerce-page #content .quantity .bootstrap-touchspin > span button:hover, 
+.woocommerce-page .quantity .bootstrap-touchspin > span button:hover,
+.woocommerce #content .quantity .bootstrap-touchspin > span button:focus, 
+.woocommerce .quantity .bootstrap-touchspin > span button:focus,
+.woocommerce-page #content .quantity .bootstrap-touchspin > span button:focus, 
+.woocommerce-page .quantity .bootstrap-touchspin > span button:focus,
+.single-product div.product form.cart .button,
+.woocommerce #review_form #respond .form-submit input,
+.woocommerce a.remove,
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce button.button.alt, 
+.woocommerce-page a.button, 
+.woocommerce-page button.button, 
+.woocommerce-page button.button.alt,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt, .woocommerce div.product p.price ins, .woocommerce div.product span.price ins,
+.tt-posts.tag-sticky-2 .post-box::before,
+.single-product .product span.onsale,
+.add-cart ul.woocommerce-mini-cart li a.remove,
+.add-cart .widget_shopping_cart_content .buttons a, .editted .cato, .pagination-wrap ul.pagination > li.page-item a.active.page-link
+ {
+			background-color:#005F90 !important; 
+		}.pr-tm-wrp:before {
+    background-image: linear-gradient(120deg, #005F90, #005F90) !important;
+}.ramadan-times {
+    background: linear-gradient(106deg, #005F90, #005F90 26%, #737777), linear-gradient(106deg, rgba(71, 229, 238, 0), #737777 28%, #737777 74%);
+}.thm-clr, .topbar-info-list > li a:hover, .topbar-info-list > li a:focus, .topbar-links > li a:hover, .topbar-links > li a:focus, nav ul li:hover > a, nav ul li > a:focus, .rsnp-mnu ul > li:hover > a, .rsnp-mnu ul > li.active > a, .rsnp-mnu ul > li > a:focus, .feat-caro > button.slick-arrow:hover, .feat-caro > button.slick-arrow:focus, .serv-box-inner > h3 a:hover, .serv-box-inner > h3 a:focus, .testi-img::before, .toggle-item.active > h4, .toggle-item > h4:hover, .post-info > h3 a:hover, .post-info > h3 a:focus, .post-info-bottom > span a:hover, .post-info-bottom > span a:focus, .post-meta > li a:hover, .post-meta > li a:focus, .social-links2 > a:hover, .social-links2 > a:focus, .widget ul li:hover > a, .widget ul li > a:focus, .copyright p a:hover, .copyright p a:focus, .team-info > h3 a:hover, .team-info > h3 a:focus, .about-image > a, ol.breadcrumb li.breadcrumb-item.active, ol.breadcrumb li.breadcrumb-item a:hover, ol.breadcrumb li.breadcrumb-item a:focus, .contact-info-box > a:hover, .contact-info-box > a:focus, blockquote, .detail-share > a:hover, .detail-share > a:focus, .comment-reply-link:hover, .comment-reply-link:focus, .widget2 form button:hover, .widget2 form button:focus, .widget2 ul li:hover > a, .widget2 ul li > a:focus, .blog-mini-post-info > h4 a:hover, .blog-mini-post-info > h4 a:focus, .post-detail-gallery-video-box > a, .filter-inner > a:hover, .filter-inner > a:focus, .shop-info > h3 a:hover, .shop-info > h3 a:focus, .shop-detail-nav-caro > button.slick-arrow:hover, .shop-detail-nav-caro > button.slick-arrow:focus, .review-link > a:hover, .review-link > a:focus, .price-stock .price ins, .product-cart-btns > a:hover, .product-cart-btns > a:focus, .product-table td h4 a:hover, .product-table td h4 a:focus, .qty-wrp .bootstrap-touchspin span.input-group-btn button:hover, .qty-wrp .bootstrap-touchspin span.input-group-btn button:focus, .rspn-srch > button:hover, .rspn-srch > button:focus, .rspn-cnt > span a:hover, .rspn-cnt > span a:focus, .post-info-bottom > span i, .post-meta > li i, .logged-in-as a:hover, blockquote > p::before, blockquote > p::after, .comment-detail > span i, .comment-reply-link > i, .proj-info > i, .woocommerce .star-rating span::before,
+		.logged-in-as a:hover,
+		.logged-in-as a:focus, 
+		figcaption a,
+		.wp-calendar-nav > span a,
+		.post-detail > p a,
+		.wp-caption-text a, .woocommerce div.product .stock,
+.woocommerce-page.woocommerce div.product p.price,
+.single-product.woocommerce .posted_in > a:hover, 
+.single-product.woocommerce .sku_wrapper > a:hover,
+.single-product.woocommerce .posted_in > a:focus, 
+.single-product.woocommerce .sku_wrapper > a:focus,
+.scl1 > a:hover,
+.scl1 > a:focus,
+.woocommerce .cart_totals table.shop_table td span.amount,
+.price ins,
+.price,
+.woocommerce ul.products li.product .price,
+.woocommerce table.shop_table td.product-name > a:hover,
+.woocommerce table.shop_table td.product-name > a:focus,
+a.showcoupon,
+.woocommerce-MyAccount-content p a,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a:focus,
+.woocommerce-account .addresses .title .edit,
+.widget.widget_archive ul li,
+.widget.widget_categories ul li,
+.add-cart ul.woocommerce-mini-cart li a:not(.remove):hover,
+.add-cart ul.woocommerce-mini-cart li a:not(.remove):focus,
+.add-cart .widget_shopping_cart_content .total .amount, .widget .social-links3 a:hover i, nav ul li.current-menu-item > a,
+.add-cart ul.woocommerce-mini-cart li span .amount, body h3 a:hover, .tt-posts .post-meta2 li a:hover, .woocommerce .rate-wrap .star-rating::before, .woocommerce .rate-wrap .star-rating span::before, .woocommerce div.product .woocommerce-tabs ul.tabs li.active > a, .woocommerce div.product .woocommerce-tabs ul.tabs li > a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li > a:focus, .woocommerce .woocommerce-tabs ul.tabs li:hover .star-rating::before, .woocommerce .woocommerce-tabs ul.tabs li:hover .star-rating span, .woocommerce .woocommerce-tabs ul.tabs li.active .star-rating::before, .woocommerce .woocommerce-tabs ul.tabs li.active .star-rating span, .related h2.woocommerce-loop-product__title:hover, .product_meta span.posted_in a:hover, .woocommerce-review__author
+		{
+			color:#005F90 !important; 
+		}.theme-brd-clr,
+.dnt-lst > a:hover,
+.dnt-lst > a:focus,
+.abt-vdo.style2:before,
+.serv-bx2:hover .serv-inf2,
+.pagination > li:hover,
+.pagination > li.active,
+.product-detail-tabs > ul li a.nav-link:hover,
+.product-detail-tabs > ul li a.nav-link:focus,
+.product-detail-tabs > ul li a.nav-link.active,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus, .plr-box.alim > i::after, .thm-brd-clr, .plr-box > i::after, .testi-itm, .hstry-img:before, .thm-layer .team-box2 > img, .plr-box:hover > i, .srv-box2:hover, .style5 .namaz-drp button#dropdownMenuButton, .thm-brd-clr, .pillar-box > span:before, .pillar-box > span span, .video-box > a:hover, .video-box > a:focus, .about-video > a:hover, .about-video > a:focus, .post-share:hover > i, .pillar-box2 > span:before, .pillar-box2 > span:after, ul.pagination > li.page-item.active a.page-link, .sermons-btns2 > a i, .prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link:hover, .prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link:focus, .prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link.active, .thm-brd-clr,
+.about-image > span:before,
+.shop-detail-tabs ul:not(.nav-tabs) li:before,
+.shop-detail-nav-caro .slick-slide.slick-current img,
+.is-style-outline .wp-block-button__link:hover,
+.is-style-outline .wp-block-button__link:focus, .sec-title-inner span::before, .sec-title-inner span::after, .pagination-wrap ul.pagination > li.page-item a.active.page-link
+		{
+			border-color: #005F90 !important;
+		}.testi-desc
+		{
+			border-top-color: #005F90;
+		}.header-right-btns > a.get-quote:hover:before,
+.header-right-btns > a.get-quote:focus:before,
+.rspn-srch > button, .style-thr nav, .search-form form button, .bg-color1, .simple-btn.thm-bg:hover, .bg-color5,
+.simple-btn.thm-bg:focus, .proj-thumb > a:before, .post-img > a:before, .team-social > a:hover, .widget2 .srch-frm button, .widget .srch-frm button
+.team-social > a:focus, .serv-detail-desc a:before, .single-product div.product form.cart .button:hover
+		{
+			background-color: #737777 !important;
+		}.call-us > strong, .add-cart > a, .sticky-menu nav > div > ul > li, .proj-info > i, .solutions-list > li > i,
+.contact-info-box > strong, .error-page-inner > h1
+		{
+			color: #737777 !important;
+		}.green-brd-clr, .plr-box.alim > i, .namaz-drp button#dropdownMenuButton
+		{
+			border-color: #737777;
+		}#triangle-right
+		{
+			border-left: 25px solid #737777;
+		}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.30.3; features: e_font_icon_svg, additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://hiperliga.com.br/wp-content/uploads/2025/04/cropped-icone_hiperliga-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://hiperliga.com.br/wp-content/uploads/2025/04/cropped-icone_hiperliga-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://hiperliga.com.br/wp-content/uploads/2025/04/cropped-icone_hiperliga-180x180.png" />
+<meta name="msapplication-TileImage" content="https://hiperliga.com.br/wp-content/uploads/2025/04/cropped-icone_hiperliga-270x270.png" />
+<style id="kriate_options-dynamic-css" title="dynamic-css" class="redux-options-output">body h1{font-family:Poppins;font-weight:600;font-style:normal;color:#222;font-size:70px;}body h2{font-family:Poppins;font-weight:600;font-style:normal;color:#222;font-size:32px;}body h3{font-family:Poppins;font-weight:600;font-style:normal;color:#222;font-size:28px;}body h4{font-family:Poppins;font-weight:600;font-style:normal;color:#222;font-size:22px;}body h5 {font-family:Poppins;font-weight:600;font-style:normal;color:#222;font-size:18px;}body h6 {font-family:Poppins;font-weight:600;font-style:normal;color:#222;font-size:16px;}body .elementor-text-editor :not(p), .post-detail > p, .about-desc > p, .serv-box-inner p, .sec-title-inner p, .hotty .sec-title-inner2 > h2 + p, .solutions-list > li > h4 + p, .testi-info > h3 + p, .post-info > h3 + p, .about-widget > h4 + p{font-family:"Open Sans";font-weight:400;font-style:normal;color:#555;font-size:15px;}nav ul li a{font-family:Poppins;font-weight:400;font-style:normal;color:#fff;font-size:15px;}</style></head>
+<body class="error404 wp-custom-logo wp-theme-kriate theme-kriate woocommerce-no-js elementor-default elementor-kit-9">
+
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM6BN96D" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<div data-elementor-type="header" data-elementor-id="1434" class="elementor elementor-1434 elementor-location-header" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-a58a2e9 e-con-full e-flex e-con e-parent" data-id="a58a2e9" data-element_type="container">
+		<div class="elementor-element elementor-element-bb54b95 e-con-full e-flex e-con e-child" data-id="bb54b95" data-element_type="container">
+				<div class="elementor-element elementor-element-f151d2c elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="f151d2c" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://hiperliga.com.br">
+			<img fetchpriority="high" width="500" height="156" src="https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga.png" class="attachment-full size-full wp-image-1137" alt="" srcset="https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga.png 500w, https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga-300x94.png 300w" sizes="(max-width: 500px) 100vw, 500px" />				</a>
+											</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-78d99ac e-con-full e-flex e-con e-child" data-id="78d99ac" data-element_type="container">
+				<div class="elementor-element elementor-element-c531875 elementor-nav-menu__align-center elementor-nav-menu--dropdown-mobile elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="c531875" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-c531875" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="https://hiperliga.com.br/hiperliga/" class="elementor-item">Hiperliga</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="https://hiperliga.com.br/gran-finalle/" class="elementor-item">Gran Finalle</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1317"><a href="/videos" class="elementor-item">Vídeos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1250"><a href="https://hiperliga.com.br/contato/" class="elementor-item">Contato</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388"><a href="https://hiperliga.com.br/sobre-nos/" class="elementor-item">Sobre Nós</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="https://hiperliga.com.br/faq/" class="elementor-item">Dúvidas Frequentes</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-c531875" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="https://hiperliga.com.br/hiperliga/" class="elementor-item" tabindex="-1">Hiperliga</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="https://hiperliga.com.br/gran-finalle/" class="elementor-item" tabindex="-1">Gran Finalle</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1317"><a href="/videos" class="elementor-item" tabindex="-1">Vídeos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1250"><a href="https://hiperliga.com.br/contato/" class="elementor-item" tabindex="-1">Contato</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388"><a href="https://hiperliga.com.br/sobre-nos/" class="elementor-item" tabindex="-1">Sobre Nós</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="https://hiperliga.com.br/faq/" class="elementor-item" tabindex="-1">Dúvidas Frequentes</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-93721ea e-con-full e-flex e-con e-child" data-id="93721ea" data-element_type="container">
+				<div class="elementor-element elementor-element-f6db842 elementor-icon-list--layout-inline elementor-list-item-link-inline elementor-mobile-align-left elementor-widget-mobile__width-initial elementor-widget elementor-widget-icon-list" data-id="f6db842" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="http://facebook.com/hiperliga.argamassa%20">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://instagram.com/hiperligatecnologiaemargamassa">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://wa.me/5541988883365?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20os%20produtos.">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fab-whatsapp" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				
+				
+		<section>
+			<div class="w-100 pt-80 black-layer pb-70 opc65 position-relative">
+				<div class="fixed-bg" style="background-image: url()"></div>
+				<div class="container">
+					<div class="page-title-wrap text-center w-100">
+						<div class="page-title-inner d-inline-block">
+																<h2 class="mb-0" itemprop="headline">404 Error Page</h2>
+							   						</div>
+					</div><!-- Page Title Wrap -->
+				</div>
+			</div>
+		</section>
+			
+	<section>
+		<div class="gap pt-70 pb-100">
+			<div class="container">
+				<div class="error-page pb-260">
+					<div class="error-page-inner">
+						<h1 itemprop="headline">4<i class="thm-clr">0</i>4</h1>
+						<span>Error! <span>Page Not Found</span></span>
+						<p itemprop="description">It seems we cant find what you are looking for. Perhaps searching can help or go <a class="thm-clr" href="https://hiperliga.com.br/" itemprop="url">Back To Hompage</a></p>
+						<div class="search-form brd-rd30">
+							<form method="get" class = "srch-frm brd-rd5" action="https://hiperliga.com.br/">
+	<input name="s" type="text" required="" placeholder="Enter Your Keywords..." value="" onfocus="if (this.value = '') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter Your Keywords...';}" >
+	<button type="submit"><i class="fas fa-search"></i></button>
+</form>						</div>
+					</div>
+				</div><!-- Error Page -->
+			</div>
+		</div>
+	</section>
+		
+		<div data-elementor-type="footer" data-elementor-id="1601" class="elementor elementor-1601 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-94930c2 e-con-full e-flex e-con e-parent" data-id="94930c2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-77463dc e-con-full e-flex e-con e-child" data-id="77463dc" data-element_type="container">
+								<img class="e-image-base " 
+									src="https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga_white.png"
+												width="500"
+												height="156"
+												srcset="https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga_white.png 500w, https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga_white-300x94.png 300w"
+												alt=""
+						/>
+					</div>
+		<div class="elementor-element elementor-element-7c88a53 e-con-full e-flex e-con e-child" data-id="7c88a53" data-element_type="container">
+				<div class="elementor-element elementor-element-e64171e elementor-nav-menu__align-start elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="e64171e" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-text e--animation-grow">
+				<ul id="menu-1-e64171e" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285"><a href="https://hiperliga.com.br/inicio/" class="elementor-item">Início</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="https://hiperliga.com.br/sobre-nos/" class="elementor-item">Sobre Nós</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1195"><a href="https://hiperliga.com.br/produtos/" class="elementor-item">Hiperliga</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1196"><a href="https://hiperliga.com.br/faq/" class="elementor-item">Dúvidas Frequentes</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-e64171e" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285"><a href="https://hiperliga.com.br/inicio/" class="elementor-item" tabindex="-1">Início</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="https://hiperliga.com.br/sobre-nos/" class="elementor-item" tabindex="-1">Sobre Nós</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1195"><a href="https://hiperliga.com.br/produtos/" class="elementor-item" tabindex="-1">Hiperliga</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1196"><a href="https://hiperliga.com.br/faq/" class="elementor-item" tabindex="-1">Dúvidas Frequentes</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4f9e7e8 e-con-full e-flex e-con e-child" data-id="4f9e7e8" data-element_type="container">
+				<div class="elementor-element elementor-element-b92ff4d elementor-icon-list--layout-inline elementor-list-item-link-inline elementor-mobile-align-center elementor-widget elementor-widget-icon-list" data-id="b92ff4d" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="http://facebook.com/hiperliga.argamassa">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://instagram.com/hiperligatecnologiaemargamassa">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://wa.me/5541988883365?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20os%20produtos.%20">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fab-whatsapp" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-7227dc9 elementor-widget elementor-widget-spacer" data-id="7227dc9" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9e1bcef elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="9e1bcef" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<style><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><br />
+  .endereco-container {<br />
+    max-width: 300px;<br />
+    width: 100%;<br />
+    padding: 20px;<br />
+    font-family: Arial, sans-serif;<br />
+    box-sizing: border-box;<br />
+    background: transparent;<br />
+    color: #fff;<br />
+  }</p>
+<p>  .endereco-container .titulo {<br />
+    font-size: 30px;<br />
+    font-weight: bold;<br />
+    margin-bottom: 10px;<br />
+    text-align: left;<br />
+  }</p>
+<p>  .endereco-container .texto {<br />
+    font-size: 12px;<br />
+    white-space: pre-line; /* Mantém quebra de linha */<br />
+    text-align: left;<br />
+  }</p>
+<p>  @media (max-width: 480px) {<br />
+    .endereco-container .titulo {<br />
+      font-size: 14px;<br />
+    }</p>
+<p>    .endereco-container .texto {<br />
+      font-size: 11px;<br />
+    }<br />
+  }<br />
+</style>
+<div class="endereco-container">
+<div class="titulo">Endereço</div>
+<div class="texto">Rua Antônio Camargo, 122
+Areias &#8211; 83514-140, Almirante Tamandaré &#8211; PR</div>
+</div>								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/kriate\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<div class="joinchat joinchat--right" data-settings='{"telephone":"5541988883365","mobile_only":false,"button_delay":0,"whatsapp_web":true,"qr":true,"message_views":2,"message_delay":-10,"message_badge":false,"message_send":"Olá *Hiperliga®*! Preciso de mais informações sobre Página não encontrada https://hiperliga.com.br/wp-content/uploads/2024/09/versatilidade-usar.png/","message_hash":"bb3ddbe1"}' >
+	<div class="joinchat__button" role="button" tabindex="0">
+							</div>
+				<div class="joinchat__qr"><div>Escanear o código</div></div>
+				<div class="joinchat__chatbox" role="dialog" aria-labelledby="joinchat__label" aria-modal="true">
+			<div class="joinchat__header">
+				<div id="joinchat__label">
+											<svg class="joinchat__wa" width="120" height="28" viewBox="0 0 120 28"><title>WhatsApp</title><path d="M117.2 17c0 .4-.2.7-.4 1-.1.3-.4.5-.7.7l-1 .2c-.5 0-.9 0-1.2-.2l-.7-.7a3 3 0 0 1-.4-1 5.4 5.4 0 0 1 0-2.3c0-.4.2-.7.4-1l.7-.7a2 2 0 0 1 1.1-.3 2 2 0 0 1 1.8 1l.4 1a5.3 5.3 0 0 1 0 2.3m2.5-3c-.1-.7-.4-1.3-.8-1.7a4 4 0 0 0-1.3-1.2c-.6-.3-1.3-.4-2-.4-.6 0-1.2.1-1.7.4a3 3 0 0 0-1.2 1.1V11H110v13h2.7v-4.5c.4.4.8.8 1.3 1 .5.3 1 .4 1.6.4a4 4 0 0 0 3.2-1.5c.4-.5.7-1 .8-1.6.2-.6.3-1.2.3-1.9s0-1.3-.3-2zm-13.1 3c0 .4-.2.7-.4 1l-.7.7-1.1.2c-.4 0-.8 0-1-.2-.4-.2-.6-.4-.8-.7a3 3 0 0 1-.4-1 5.4 5.4 0 0 1 0-2.3c0-.4.2-.7.4-1 .1-.3.4-.5.7-.7a2 2 0 0 1 1-.3 2 2 0 0 1 1.9 1l.4 1a5.4 5.4 0 0 1 0 2.3m1.7-4.7a4 4 0 0 0-3.3-1.6c-.6 0-1.2.1-1.7.4a3 3 0 0 0-1.2 1.1V11h-2.6v13h2.7v-4.5c.3.4.7.8 1.2 1 .6.3 1.1.4 1.7.4a4 4 0 0 0 3.2-1.5c.4-.5.6-1 .8-1.6s.3-1.2.3-1.9-.1-1.3-.3-2c-.2-.6-.4-1.2-.8-1.6m-17.5 3.2 1.7-5 1.7 5zm.2-8.2-5 13.4h3l1-3h5l1 3h3L94 7.3zm-5.3 9.1-.6-.8-1-.5a11.6 11.6 0 0 0-2.3-.5l-1-.3a2 2 0 0 1-.6-.3.7.7 0 0 1-.3-.6c0-.2 0-.4.2-.5l.3-.3h.5l.5-.1c.5 0 .9 0 1.2.3.4.1.6.5.6 1h2.5c0-.6-.2-1.1-.4-1.5a3 3 0 0 0-1-1 4 4 0 0 0-1.3-.5 7.7 7.7 0 0 0-3 0c-.6.1-1 .3-1.4.5l-1 1a3 3 0 0 0-.4 1.5 2 2 0 0 0 1 1.8l1 .5 1.1.3 2.2.6c.6.2.8.5.8 1l-.1.5-.4.4a2 2 0 0 1-.6.2 2.8 2.8 0 0 1-1.4 0 2 2 0 0 1-.6-.3l-.5-.5-.2-.8H77c0 .7.2 1.2.5 1.6.2.5.6.8 1 1 .4.3.9.5 1.4.6a8 8 0 0 0 3.3 0c.5 0 1-.2 1.4-.5a3 3 0 0 0 1-1c.3-.5.4-1 .4-1.6 0-.5 0-.9-.3-1.2M74.7 8h-2.6v3h-1.7v1.7h1.7v5.8c0 .5 0 .9.2 1.2l.7.7 1 .3a7.8 7.8 0 0 0 2 0h.7v-2.1a3.4 3.4 0 0 1-.8 0l-1-.1-.2-1v-4.8h2V11h-2zm-7.6 9v.5l-.3.8-.7.6c-.2.2-.7.2-1.2.2h-.6l-.5-.2a1 1 0 0 1-.4-.4l-.1-.6.1-.6.4-.4.5-.3a4.8 4.8 0 0 1 1.2-.2 8 8 0 0 0 1.2-.2l.4-.3v1zm2.6 1.5v-5c0-.6 0-1.1-.3-1.5l-1-.8-1.4-.4a10.9 10.9 0 0 0-3.1 0l-1.5.6c-.4.2-.7.6-1 1a3 3 0 0 0-.5 1.5h2.7c0-.5.2-.9.5-1a2 2 0 0 1 1.3-.4h.6l.6.2.3.4.2.7c0 .3 0 .5-.3.6-.1.2-.4.3-.7.4l-1 .1a22 22 0 0 0-2.4.4l-1 .5c-.3.2-.6.5-.8.9-.2.3-.3.8-.3 1.3s.1 1 .3 1.3c.1.4.4.7.7 1l1 .4c.4.2.9.2 1.3.2a6 6 0 0 0 1.8-.2c.6-.2 1-.5 1.5-1a4 4 0 0 0 .2 1H70l-.3-1zm-11-6.7c-.2-.4-.6-.6-1-.8-.5-.2-1-.3-1.8-.3-.5 0-1 .1-1.5.4a3 3 0 0 0-1.3 1.2v-5h-2.7v13.4H53v-5.1c0-1 .2-1.7.5-2.2.3-.4.9-.6 1.6-.6.6 0 1 .2 1.3.6s.4 1 .4 1.8v5.5h2.7v-6c0-.6 0-1.2-.2-1.6 0-.5-.3-1-.5-1.3zm-14 4.7-2.3-9.2h-2.8l-2.3 9-2.2-9h-3l3.6 13.4h3l2.2-9.2 2.3 9.2h3l3.6-13.4h-3zm-24.5.2L18 15.6c-.3-.1-.6-.2-.8.2A20 20 0 0 1 16 17c-.2.2-.4.3-.7.1-.4-.2-1.5-.5-2.8-1.7-1-1-1.7-2-2-2.4-.1-.4 0-.5.2-.7l.5-.6.4-.6v-.6L10.4 8c-.3-.6-.6-.5-.8-.6H9c-.2 0-.6.1-.9.5C7.8 8.2 7 9 7 10.7s1.3 3.4 1.4 3.6c.2.3 2.5 3.7 6 5.2l1.9.8c.8.2 1.6.2 2.2.1s2-.8 2.3-1.6c.3-.9.3-1.5.2-1.7l-.7-.4zM14 25.3c-2 0-4-.5-5.8-1.6l-.4-.2-4.4 1.1 1.2-4.2-.3-.5A11.5 11.5 0 0 1 22.1 5.7 11.5 11.5 0 0 1 14 25.3M14 0A13.8 13.8 0 0 0 2 20.7L0 28l7.3-2A13.8 13.8 0 1 0 14 0"/></svg>
+									</div>
+				<div class="joinchat__close" role="button" tabindex="0" aria-label="Fechar"></div>
+			</div>
+			<div class="joinchat__scroll">
+				<div class="joinchat__content">
+					<div class="joinchat__chat"><div class="joinchat__bubble"><jc-rand><jc-opt>Oi</jc-opt><jc-opt>Olá</jc-opt></jc-rand> , boas-vindas ao <strong>Hiperliga®</strong></div>
+<div class="joinchat__bubble">Podemos te ajudar?</div></div>
+					<div class="joinchat__open" role="button" tabindex="0">
+													<div class="joinchat__open__text">Abrir bate-papo</div>
+												<svg class="joinchat__open__icon" width="60" height="60" viewbox="0 0 400 400">
+							<path class="joinchat__pa" d="M168.83 200.504H79.218L33.04 44.284a1 1 0 0 1 1.386-1.188L365.083 199.04a1 1 0 0 1 .003 1.808L34.432 357.903a1 1 0 0 1-1.388-1.187l29.42-99.427"/>
+							<path class="joinchat__pb" d="M318.087 318.087c-52.982 52.982-132.708 62.922-195.725 29.82l-80.449 10.18 10.358-80.112C18.956 214.905 28.836 134.99 81.913 81.913c65.218-65.217 170.956-65.217 236.174 0 42.661 42.661 57.416 102.661 44.265 157.316"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+				<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='joinchat-css' href='https://hiperliga.com.br/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=6.0.6' type='text/css' media='all' />
+<style id='joinchat-inline-css' type='text/css'>
+.joinchat{--ch:142;--cs:70%;--cl:49%;--bw:0}
+</style>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/masterlayer-addons-for-elementor/assets/js/gsap.min.js?ver=1.0.0" id="gsap-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/masterlayer-addons-for-elementor/assets/js/waitforimages.js?ver=1.0.0" id="waitforimages-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/masterlayer-addons-for-elementor/assets/js/core.js?ver=1.0" id="mae-core-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/masterlayer-addons-for-elementor/assets/js/init.js?ver=1.0" id="mae-init-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-05-19 13:41:20+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Error:":["Erro:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/hiperliga.com.br\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/popper.min.js?ver=1.0.0" id="popper-js"></script>
+<script type="text/javascript" id="bootstrap-js-extra">
+/* <![CDATA[ */
+var ajax_var = {"url":"https:\/\/hiperliga.com.br\/wp-admin\/admin-ajax.php","nonce":"76498b488b"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/bootstrap.min.js?ver=1.0.0" id="bootstrap-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/jquery.fancybox.min.js?ver=1.0.0" id="fancybox-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/perfect-scrollbar.min.js?ver=1.0.0" id="perfect-scrollbar-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/ResizeSensor.min.js?ver=1.0.0" id="ResizeSensor-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/theia-sticky-sidebar.min.js?ver=1.0.0" id="theia-sticky-sidebar-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/wow.min.js?ver=1.0.0" id="woo-animation-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/bootstrap-select.min.js?ver=1.0.0" id="bootstrap-select-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/isotope.pkgd.min.js?ver=1.0.0" id="isotope-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/themes/kriate/assets/js/custom-scripts.js?ver=1.0.0" id="kriate-custom-scripts-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.30.3" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.30.3" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},
+"hasCustomBreakpoints":false},"version":"3.30.3","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"nested-elements":true,"e_element_cache":true,"home_screen":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"e_v_3_30":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"mega-menu":true},"urls":{"assets":"https:\/\/hiperliga.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/hiperliga.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/hiperliga.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"fa778fbadd"},"swiperClass":"swiper","settings":{"editorPreferences":[]},"kit":{"global_image_lightbox":"no","active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":0,"title":"P\u00e1gina n\u00e3o encontrada &#8211; Hiperliga\u00ae","excerpt":""}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.30.3" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/creame-whatsapp-me/public/js/qr-creator.min.js?ver=1.0.0" id="joinchat-qr-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js?ver=6.0.6" id="joinchat-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.0.3" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"base64":false,"ajaxurl":"https:\/\/hiperliga.com.br\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.0.3" id="wc-order-attribution-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.27.4" id="elementor-pro-webpack-runtime-js"></script>
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
+/* <![CDATA[ */
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/hiperliga.com.br\/wp-admin\/admin-ajax.php","nonce":"638fdb216d","urls":{"assets":"https:\/\/hiperliga.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/hiperliga.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},
+"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/hiperliga.com.br","checkout_page_url":"https:\/\/hiperliga.com.br","fragments_nonce":"33d0581d64"}},
+"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/hiperliga.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.27.4" id="elementor-pro-frontend-js"></script>
+<script type="text/javascript" src="https://hiperliga.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.27.4" id="pro-elements-handlers-js"></script>
+
+</body>
+</html>

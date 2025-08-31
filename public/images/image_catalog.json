@@ -1,0 +1,155 @@
+{
+  "total_images": 16,
+  "categories": {
+    "01_brand": 2,
+    "03_products/hiperliga": 13,
+    "03_products": 1
+  },
+  "images": [
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga.png",
+      "local_path": "../public/images/01_brand/logo_hiperliga.png",
+      "filename": "logo_hiperliga.png",
+      "category": "01_brand",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 40893
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/04/hiperliga-1.png",
+      "local_path": "../public/images/03_products/hiperliga/hiperliga-1.png",
+      "filename": "hiperliga-1.png",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 264488
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/04/01.webp",
+      "local_path": "../public/images/03_products/hiperliga/01.webp",
+      "filename": "01.webp",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 85876
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/04/02.webp",
+      "local_path": "../public/images/03_products/hiperliga/02.webp",
+      "filename": "02.webp",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 57702
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2020/12/hiperliga_produto_1.jpeg",
+      "local_path": "../public/images/03_products/hiperliga/hiperliga_produto_1.jpeg",
+      "filename": "hiperliga_produto_1.jpeg",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 87236
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/08/100-sustentavel-usar.png",
+      "local_path": "../public/images/03_products/hiperliga/100-sustentavel-usar.png",
+      "filename": "100-sustentavel-usar.png",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 781212
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/08/economia-de-espaco-e-material-usar.png",
+      "local_path": "../public/images/03_products/hiperliga/economia-de-espaco-e-material-usar.png",
+      "filename": "economia-de-espaco-e-material-usar.png",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 403699
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/08/versatilidade-usar.png",
+      "local_path": "../public/images/03_products/hiperliga/versatilidade-usar.png",
+      "filename": "versatilidade-usar.png",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 706391
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/08/desempenho-e-durabilidade-usar-1024x1024.png",
+      "local_path": "../public/images/03_products/hiperliga/desempenho-e-durabilidade-usar-1024x1024.png",
+      "filename": "desempenho-e-durabilidade-usar-1024x1024.png",
+      "category": "03_products/hiperliga",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 334717
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga_white.png",
+      "local_path": "../public/images/01_brand/logo_hiperliga_white.png",
+      "filename": "logo_hiperliga_white.png",
+      "category": "01_brand",
+      "alt": "",
+      "page": "https://hiperliga.com.br/",
+      "size": 16534
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/themes/kriate/assets/images/pattern-bg2.jpg",
+      "local_path": "../public/images/03_products/hiperliga/pattern-bg2.jpg",
+      "filename": "pattern-bg2.jpg",
+      "category": "03_products/hiperliga",
+      "alt": "Background image",
+      "page": "https://hiperliga.com.br/",
+      "size": 174370
+    },
+    {
+      "original_url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "local_path": "../public/images/03_products/image_11.jpg",
+      "filename": "image_11.jpg",
+      "category": "03_products",
+      "alt": "Construção civil moderna",
+      "page": "https://hiperliga.com.br/hiperliga",
+      "size": 334590
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/08/3-KG-800.png",
+      "local_path": "../public/images/03_products/hiperliga/3-KG-800.png",
+      "filename": "3-KG-800.png",
+      "category": "03_products/hiperliga",
+      "alt": "Embalagem 3Kg",
+      "page": "https://hiperliga.com.br/hiperliga",
+      "size": 628682
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/08/25-0KG-800.png",
+      "local_path": "../public/images/03_products/hiperliga/25-0KG-800.png",
+      "filename": "25-0KG-800.png",
+      "category": "03_products/hiperliga",
+      "alt": "Embalagem 25Kg",
+      "page": "https://hiperliga.com.br/hiperliga",
+      "size": 549818
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/08/40-KG-800.png",
+      "local_path": "../public/images/03_products/hiperliga/40-KG-800.png",
+      "filename": "40-KG-800.png",
+      "category": "03_products/hiperliga",
+      "alt": "Embalagem 40Kg",
+      "page": "https://hiperliga.com.br/hiperliga",
+      "size": 367218
+    },
+    {
+      "original_url": "https://hiperliga.com.br/wp-content/uploads/2025/04/faq-mockup.png",
+      "local_path": "../public/images/03_products/hiperliga/faq-mockup.png",
+      "filename": "faq-mockup.png",
+      "category": "03_products/hiperliga",
+      "alt": "FAQ Image",
+      "page": "https://hiperliga.com.br/faq",
+      "size": 436014
+    }
+  ],
+  "timestamp": "2025-08-30 21:10:03"
+}

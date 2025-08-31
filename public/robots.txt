@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Block admin and development paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /produtos/
+Allow: /sobre/
+Allow: /contato/
+Allow: /faq/
+Allow: /videos/
+
+# Sitemap location
+Sitemap: https://hiperliga.com.br/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
