@@ -1,0 +1,194 @@
+{
+  "company": {
+    "legalName": "Hiperliga Materiais para Construção Ltda",
+    "tradeName": "Hiperliga®",
+    "foundedYear": 2014,
+    "experienceYears": 10,
+    "address": {
+      "street": "Rua Antônio Camargo",
+      "number": "122",
+      "neighborhood": "Areias",
+      "city": "Almirante Tamandaré",
+      "state": "PR",
+      "zipCode": "83514-140",
+      "fullAddress": "Rua Antônio Camargo, 122, Areias – 83514-140, Almirante Tamandaré – PR"
+    },
+    "contact": {
+      "whatsapp": "5541988883365",
+      "website": "https://hiperliga.com.br",
+      "socialMedia": {
+        "facebook": "http://facebook.com/hiperliga.argamassa",
+        "instagram": "https://instagram.com/hiperligatecnologiaemargamassa",
+        "whatsapp": "https://wa.me/5541988883365?text=Olá, vim do site e quero saber mais sobre os produtos."
+      }
+    },
+    "experienceAreas": [
+      {
+        "id": "construcao-civil",
+        "name": "Construção Civil",
+        "description": "Vasta experiência no desenvolvimento de soluções para construção civil"
+      },
+      {
+        "id": "mineracao",
+        "name": "Mineração", 
+        "description": "Expertise em processos e materiais de mineração para construção"
+      },
+      {
+        "id": "quimica",
+        "name": "Química",
+        "description": "Conhecimento em aditivos químicos e composições para argamassas"
+      }
+    ],
+    "history": {
+      "foundation": "A Hiperliga Materiais para Construção Ltda foi fundada com base na vasta experiência nas áreas da construção civil, mineração e química.",
+      "development": "Após intensa pesquisa, desenvolvemos produtos com tecnologia para facilitar sua obra, gerando economia, rapidez e praticidade.",
+      "currentStatus": "Atualmente possui mais de 10 anos de experiência e mais de 3 milhões de m² aplicados com suporte técnico especializado."
+    },
+    "milestones": [
+      {
+        "year": 2014,
+        "description": "Fundação da empresa"
+      },
+      {
+        "description": "Mais de 10 anos de experiência no mercado"
+      },
+      {
+        "description": "Mais de 3 milhões de m² aplicados",
+        "metric": {
+          "value": "3000000",
+          "unit": "m²",
+          "description": "metros quadrados aplicados com suporte técnico"
+        }
+      }
+    ],
+    "mainProducts": [
+      {
+        "name": "Argamassa Polimérica Hiperliga®",
+        "description": "Produto tecnológico à base de mistura homogênea de agregados minerais com granulometria controlada e aditivos químicos",
+        "benefits": [
+          "100% sustentável na fabricação e aplicação",
+          "0% de água, 0% de areia, 0% de cimento e 0% de cal",
+          "Pronta para uso - não precisa adicionar água ou aditivos",
+          "1 bisnaga de 3kg equivale a 60kg de cimento tradicional",
+          "Economia substancial de material e espaço",
+          "3x mais rápida na aplicação",
+          "Até 35% de economia nos custos"
+        ],
+        "keyFeatures": [
+          "Imediata colagem e endurecimento de superfícies",
+          "Alto grau de resistência na colagem e aderência",
+          "Consistência pastosa ideal para superfícies verticais e horizontais",
+          "Aplicável em concreto, cerâmica, ferro e outras superfícies",
+          "Ideal para assentamento, reboco e reparos"
+        ]
+      }
+    ],
+    "values": {
+      "mission": "Desenvolver produtos tecnológicos para facilitar obras, gerando economia, rapidez e praticidade na construção civil",
+      "values": [
+        "Inovação tecnológica",
+        "Sustentabilidade ambiental", 
+        "Qualidade e durabilidade",
+        "Suporte técnico especializado",
+        "Eficiência e praticidade"
+      ],
+      "differentials": [
+        "100% sustentável",
+        "Pronto para uso",
+        "Alto rendimento - 1 bisnaga = 60kg cimento",
+        "Versatilidade de aplicação",
+        "Mais de 10 anos de experiência",
+        "Suporte técnico especializado"
+      ]
+    },
+    "achievements": {
+      "totalArea": "Mais de 3 milhões de m²",
+      "yearsExperience": "Mais de 10 anos",
+      "technicalSupport": true
+    }
+  },
+  "images": [
+    {
+      "id": "logo-hiperliga",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga.png",
+      "category": "logo",
+      "description": "Logo principal da Hiperliga",
+      "alt": "Logo Hiperliga - Argamassa Polimérica",
+      "filename": "logo_hiperliga.png"
+    },
+    {
+      "id": "logo-hiperliga-white",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga_white.png", 
+      "category": "logo",
+      "description": "Logo Hiperliga em branco",
+      "alt": "Logo Hiperliga branco",
+      "filename": "logo_hiperliga_white.png"
+    },
+    {
+      "id": "produto-hiperliga-1",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/hiperliga-1.png",
+      "category": "product",
+      "description": "Produto Hiperliga - embalagem",
+      "alt": "Produto Hiperliga argamassa polimérica",
+      "filename": "hiperliga-1.png"
+    },
+    {
+      "id": "beneficio-01",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/01.webp",
+      "category": "product",
+      "description": "Ilustração dos benefícios da Hiperliga",
+      "alt": "Velocidade em sua obra com Hiperliga",
+      "filename": "01.webp"
+    },
+    {
+      "id": "beneficio-02", 
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/02.webp",
+      "category": "product",
+      "description": "5 Benefícios da Hiperliga",
+      "alt": "5 Benefícios da Hiperliga", 
+      "filename": "02.webp"
+    },
+    {
+      "id": "produto-aplicacao",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2020/12/hiperliga_produto_1.jpeg",
+      "category": "product",
+      "description": "Produto Hiperliga em aplicação",
+      "alt": "Hiperliga produto em uso na obra",
+      "filename": "hiperliga_produto_1.jpeg"
+    },
+    {
+      "id": "sustentabilidade",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/100-sustentavel-usar.png",
+      "category": "product",
+      "description": "Selo 100% sustentável",
+      "alt": "100% sustentável - Hiperliga",
+      "filename": "100-sustentavel-usar.png"
+    },
+    {
+      "id": "economia-espaco",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/economia-de-espaco-e-material-usar.png",
+      "category": "product", 
+      "description": "Economia de espaço e material",
+      "alt": "Economia de espaço e material - Hiperliga",
+      "filename": "economia-de-espaco-e-material-usar.png"
+    },
+    {
+      "id": "versatilidade",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/versatilidade-usar.png",
+      "category": "product",
+      "description": "Versatilidade de aplicação",
+      "alt": "Versatilidade de aplicação - Hiperliga",
+      "filename": "versatilidade-usar.png"
+    },
+    {
+      "id": "desempenho-durabilidade",
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/desempenho-e-durabilidade-usar-1024x1024.png",
+      "category": "product",
+      "description": "Desempenho e durabilidade superior",
+      "alt": "Desempenho e durabilidade superior - Hiperliga",
+      "filename": "desempenho-e-durabilidade-usar-1024x1024.png"
+    }
+  ],
+  "lastUpdated": "2025-01-31T00:00:00Z",
+  "source": "https://hiperliga.com.br"
+}

@@ -273,7 +273,7 @@ export class PerformanceBudgetMonitor {
       if (metrics[category] && budget[category]) {
         for (const [metric, value] of Object.entries(metrics[category])) {
           totalChecks++
-          const budgetValue = budget[category][metric as keyof typeof budget[category]]
+          const budgetValue = (budget[category] as any)[metric]
           if (value <= budgetValue) {
             passedChecks++
           }

@@ -23,7 +23,17 @@ import { Badge } from '@/components/ui/badge'
 import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
 import { OptimizedImage } from '@/components/ui/optimized-image'
+import { LazySection } from '@/components/ui/lazy-section'
+import { TestimonialsSection } from '@/components/sections/testimonials-section'
+import { BenefitsProgressiveSection } from '@/components/sections/benefits-progressive'
+import { ProductExpandableCard } from '@/components/ui/expandable-card'
+import { InteractiveStats } from '@/components/ui/interactive-stats'
+import { FloatingCTA } from '@/components/ui/floating-cta'
+import { InterestCTASection, DecisionCTASection } from '@/components/sections/cta-section'
+import { CalculatorWidget } from '@/components/ui/calculator-widget'
 import { useBreakpoint } from '@/hooks/use-media-query'
+import { getDepoimentos } from '@/lib/depoimentos-data'
+import { trackUserInteraction, trackConversion } from '@/lib/analytics'
 
 // Animation variants
 const fadeInUp = {
@@ -92,6 +102,9 @@ export default function HomePage() {
   const [formData, setFormData] = React.useState({ email: '', name: '' })
   const [isSubmitting, setIsSubmitting] = React.useState(false)
   const [submitMessage, setSubmitMessage] = React.useState('')
+  
+  // Load testimonials data
+  const depoimentosData = getDepoimentos()
   
   // Counter values
   const squareMeters = useCounter(3, 2000, statsInView)
@@ -178,10 +191,10 @@ export default function HomePage() {
             animate='visible'
             variants={isDesktop ? fadeInUp : {}}
           >
-            {/* Badge - Simplified for mobile */}
+            {/* Badge - Real company data */}
             <motion.div variants={isDesktop ? fadeInUp : {}}>
               <Badge className='mb-4 sm:mb-6 bg-white/20 text-white border-white/30 text-xs sm:text-sm'>
-                {isMobile ? '🏆 3M+ m² aplicados' : '🏆 Mais de 10 anos - 3M + m² aplicados com suporte técnico especializado'}
+                {isMobile ? '🏆 Mais de 3 milhões m² aplicados' : '🏆 Mais de 10 anos no mercado - Mais de 3 milhões m² aplicados com suporte técnico especializado'}
               </Badge>
             </motion.div>
             
@@ -196,14 +209,14 @@ export default function HomePage() {
               </span>
             </motion.h1>
             
-            {/* Description - Concise for mobile */}
+            {/* Description - Real product benefits */}
             <motion.p 
               className='text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto text-white/90 leading-relaxed'
               variants={isDesktop ? fadeInUp : {}}
             >
               {isMobile 
-                ? 'Construa 3x mais rápido com 35% de economia. A solução sustentável e pronta para uso que sua obra precisa.'
-                : 'Argamassa polimérica 100% sustentável: 0% água, areia, cimento. Uma bisnaga de 3kg equivale a 60kg de cimento tradicional. Construa 3x mais rápido com 35% de economia.'
+                ? 'Argamassa 3x mais rápida com até 35% de economia. Pronta para uso: 1 bisnaga de 3kg equivale a 60kg de cimento tradicional.'
+                : 'Argamassa polimérica 100% sustentável: 0% água, areia, cimento e cal. Pronta para uso - 1 bisnaga de 3kg equivale a 60kg de cimento tradicional. Aplicação 3x mais rápida com até 35% de economia.'
               }
             </motion.p>
             
@@ -212,12 +225,17 @@ export default function HomePage() {
               className='flex flex-col gap-3 sm:gap-4 justify-center max-w-sm sm:max-w-none mx-auto sm:flex-row'
               variants={isDesktop ? fadeInUp : {}}
             >
-              <Link href='/produtos/hiperliga' className='w-full sm:w-auto'>
+              <a 
+                href='https://wa.me/5541988883365?text=Olá! Vi o site da Hiperliga e gostaria de conhecer melhor a argamassa polimérica que economiza até 35% na obra.' 
+                className='w-full sm:w-auto'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <Button size={isMobile ? 'lg' : 'xl'} variant='luxury' className='w-full text-white shadow-luxury'>
-                  Conheça a Hiperliga
+                  Economize até 35% na sua obra
                   <ArrowRightIcon className='ml-2 h-4 w-4 sm:h-5 sm:w-5' />
                 </Button>
-              </Link>
+              </a>
               
               {/* Secondary CTA - Hidden on mobile, shows on tablet+ */}
               {!isMobile && (
@@ -234,119 +252,13 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* Benefits Section - Mobile-First Redesigned */}
-      <Section>
-        <Container>
-          <motion.div
-            className='text-center mb-8 sm:mb-12 lg:mb-16'
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.3 }}
-            variants={isDesktop ? fadeInUp : {}}
-          >
-            <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4'>
-              Por que escolher a Hiperliga?
-            </h2>
-            <p className='text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto'>
-              {isMobile 
-                ? 'A escolha inteligente para uma obra mais rápida, econômica e sustentável.'
-                : 'Descubra os benefícios que tornam a Hiperliga a escolha inteligente para sua obra'
-              }
-            </p>
-          </motion.div>
-          
-          {/* Grid: Mobile-first 1 column, then 2, then 4 */}
-          <motion.div
-            className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6 lg:gap-8'
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.2 }}
-            variants={isDesktop ? staggerChildren : {}}
-          >
-            <motion.div variants={isDesktop ? scaleIn : {}}>
-              <Card variant='sustainable' className={`p-4 sm:p-6 lg:p-8 h-full text-center ${isDesktop ? 'group hover:hover-lift' : ''}`}>
-                <div className='mb-4 sm:mb-6 flex justify-center'>
-                  <div className={`w-12 h-12 sm:w-16 sm:w-16 lg:w-20 lg:h-20 rounded-lg sm:rounded-xl overflow-hidden flex items-center justify-center bg-green-100 ${isDesktop ? 'group-hover:scale-110 transition-transform duration-300' : ''}`}>
-                    <GlobeAmericasIcon className='w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-green-600' />
-                  </div>
-                </div>
-                <h3 className='text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3'>
-                  {isMobile ? 'Sustentável' : 'Sustentabilidade Ambiental'}
-                </h3>
-                <p className='text-xs sm:text-sm lg:text-base text-muted-foreground'>
-                  {isMobile 
-                    ? '0% água, areia, cimento ou cal'
-                    : 'Produzida e aplicada de maneira totalmente sustentável, sem água, areia, cimento ou cal.'
-                  }
-                </p>
-              </Card>
-            </motion.div>
-            
-            <motion.div variants={scaleIn}>
-              <Card variant='innovation' hover='lift' className='p-8 h-full text-center group'>
-                <div className='mb-6 flex justify-center'>
-                  <div className='relative w-20 h-20 rounded-2xl overflow-hidden shadow-glow-blue group-hover:scale-110 group-hover:rotate-3 transition-all duration-500'>
-                    <img
-                      src="/images/official/versatilidade.png"
-                      alt="3x Mais Rápida - Versatilidade e velocidade na aplicação"
-                      width={80}
-                      height={80}
-                      className="object-cover rounded-2xl"
-                    />
-                  </div>
-                </div>
-                <h3 className='text-2xl font-bold mb-4 group-hover:text-brand-tech-dark transition-colors'>Praticidade e Pronto para Uso</h3>
-                <p className='text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors'>
-                  Elimina a necessidade de adicionar água ou aditivos, simplificando o processo de aplicação. Está pronta para ser utilizada diretamente da embalagem.
-                </p>
-                <div className="absolute top-4 right-4 w-2 h-2 bg-brand-tech-medium rounded-sm opacity-0 group-hover:opacity-60 transition-all duration-700 animate-float" />
-              </Card>
-            </motion.div>
-            
-            <motion.div variants={scaleIn}>
-              <Card variant='luxury' hover='premium' className='p-8 h-full text-center group'>
-                <div className='mb-6 flex justify-center'>
-                  <div className='relative w-20 h-20 rounded-2xl overflow-hidden shadow-premium group-hover:scale-110 group-hover:rotate-3 transition-all duration-500'>
-                    <img
-                      src="/images/official/economia-de-espaco-e-material-usar.png"
-                      alt="Até 35% de Economia - Economia de espaço e material"
-                      width={80}
-                      height={80}
-                      className="object-cover rounded-2xl"
-                    />
-                  </div>
-                </div>
-                <h3 className='text-2xl font-bold mb-4 group-hover:text-brand-primary transition-colors'>Economia de Material e Espaço</h3>
-                <p className='text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors'>
-                  Uma bisnaga de 3kg de Hiperliga equivale a 60kg de cimento tradicional, proporcionando economia substancial de material e espaço.
-                </p>
-                <div className="absolute inset-0 bg-gradient-to-br from-card/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl" />
-              </Card>
-            </motion.div>
-            
-            <motion.div variants={scaleIn}>
-              <Card variant='glass' hover='float' className='p-8 h-full text-center group'>
-                <div className='mb-6 flex justify-center'>
-                  <div className='relative w-20 h-20 rounded-2xl overflow-hidden shadow-premium group-hover:scale-110 group-hover:rotate-3 transition-all duration-500'>
-                    <img
-                      src="/images/official/desempenho-durabilidade.png"
-                      alt="Desempenho e Durabilidade Superior - Hiperliga"
-                      width={80}
-                      height={80}
-                      className="object-cover rounded-2xl"
-                    />
-                  </div>
-                </div>
-                <h3 className='text-2xl font-bold mb-4 group-hover:text-purple-700 transition-colors'>Desempenho e Durabilidade Superior</h3>
-                <p className='text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors'>
-                  Graças à sua composição avançada, oferece aderência e durabilidade excepcionais, garantindo resultados de alta qualidade.
-                </p>
-                <div className="absolute bottom-6 left-6 w-1.5 h-1.5 bg-purple-400 rounded-sm opacity-0 group-hover:opacity-50 transition-all duration-600 animate-float" />
-              </Card>
-            </motion.div>
-          </motion.div>
-        </Container>
-      </Section>
+      {/* Enhanced Benefits Section with Progressive Disclosure */}
+      <BenefitsProgressiveSection 
+        variant="detailed"
+        showTechnicalSpecs={true}
+        initialBenefits={4}
+        className="py-16 lg:py-24"
+      />
 
       {/* Professional Showcase Section - Optimized Based on Gemini Analysis */}
       <Section className='bg-white dark:bg-gray-900'>
@@ -365,7 +277,7 @@ export default function HomePage() {
                 O Futuro da Construção: Mais Rápido, Mais Forte, Mais Sustentável.
               </h2>
               <p className='text-lg text-muted-foreground mb-6 leading-relaxed'>
-                A Hiperliga é a argamassa polimérica revolucionária desenvolvida para máxima eficiência e responsabilidade ambiental. Reduza prazos de projeto e custos enquanto supera os padrões modernos de sustentabilidade.
+                Desenvolvida com mais de 10 anos de experiência em construção civil, mineração e química. A Hiperliga une tecnologia avançada para criar argamassas que tornam sua obra mais prática, rápida e econômica.
               </p>
               
               {/* Key Benefits List */}
@@ -376,15 +288,15 @@ export default function HomePage() {
                 </li>
                 <li className='flex items-center'>
                   <GlobeAmericasIcon className='w-6 h-6 text-sustainable-600 mr-3' />
-                  <span className='text-foreground font-medium'>21x menos consumo de água</span>
+                  <span className='text-foreground font-medium'>Redução de 21x no consumo de água</span>
                 </li>
                 <li className='flex items-center'>
                   <CheckBadgeIcon className='w-6 h-6 text-brand-accent mr-3' />
-                  <span className='text-foreground font-medium'>Durabilidade e aderência superiores</span>
+                  <span className='text-foreground font-medium'>Alto rendimento: 20m² por balde de 3kg</span>
                 </li>
                 <li className='flex items-center'>
                   <CurrencyDollarIcon className='w-6 h-6 text-yellow-600 mr-3' />
-                  <span className='text-foreground font-medium'>Até 35% de economia no projeto</span>
+                  <span className='text-foreground font-medium'>Economia de até 35% nos custos finais</span>
                 </li>
               </ul>
 
@@ -415,15 +327,15 @@ export default function HomePage() {
                 <div className='flex flex-wrap items-center gap-6 text-sm text-muted-foreground'>
                   <div className='flex items-center'>
                     <BuildingOffice2Icon className='w-4 h-4 mr-2 text-brand-primary' />
-                    <span><strong className='text-foreground'>+3M m²</strong> construídos</span>
+                    <span><strong className='text-foreground'>Mais de 3 milhões m²</strong> aplicados</span>
                   </div>
                   <div className='flex items-center'>
                     <CheckBadgeIcon className='w-4 h-4 mr-2 text-sustainable-600' />
-                    <span><strong className='text-foreground'>10+ anos</strong> no mercado</span>
+                    <span><strong className='text-foreground'>Mais de 10 anos</strong> de experiência</span>
                   </div>
                   <div className='flex items-center'>
                     <SparklesIcon className='w-4 h-4 mr-2 text-brand-accent' />
-                    <span><strong className='text-foreground'>100%</strong> sustentável</span>
+                    <span><strong className='text-foreground'>Suporte técnico</strong> especializado</span>
                   </div>
                 </div>
               </div>
@@ -501,27 +413,27 @@ export default function HomePage() {
               </h2>
               <p className='text-lg text-muted-foreground mb-6 leading-relaxed'>
                 A Hiperliga® é uma argamassa polimérica de alto desempenho, pronta para uso, 
-                composta por agregados minerais e aditivos químicos. Desenvolvida com tecnologia avançada, 
-                ela revoluciona a construção civil ao oferecer mais praticidade, rapidez e economia.
+                desenvolvida pela Hiperliga Materiais para Construção Ltda com base na vasta experiência 
+                nas áreas da construção civil, mineração e química.
               </p>
               <p className='text-lg text-muted-foreground mb-8 leading-relaxed'>
-                Hiperliga une experiência em construção, mineração e química para criar argamassas 
-                tecnológicas que tornam sua obra mais prática, rápida e econômica. 100% sustentável 
-                na fabricação e na aplicação: 0% de água, 0% de areia, 0% de cimento e 0% de cal.
+                Produto tecnológico à base de mistura homogênea de agregados minerais com granulometria 
+                controlada e aditivos químicos. 100% sustentável na fabricação e aplicação: 
+                0% de água, 0% de areia, 0% de cimento e 0% de cal.
               </p>
               
               <div className='space-y-4 mb-8'>
                 <div className='flex items-center gap-3'>
                   <CheckBadgeIcon className='h-6 w-6 text-green-600' />
-                  <span>Mais de 10 anos - 3M + m² aplicados</span>
+                  <span>Mais de 10 anos de experiência - Mais de 3 milhões m² aplicados</span>
                 </div>
                 <div className='flex items-center gap-3'>
                   <CheckBadgeIcon className='h-6 w-6 text-green-600' />
-                  <span>Suporte técnico e especializado</span>
+                  <span>Suporte técnico especializado em todas as aplicações</span>
                 </div>
                 <div className='flex items-center gap-3'>
                   <CheckBadgeIcon className='h-6 w-6 text-green-600' />
-                  <span>Certificação de qualidade e sustentabilidade</span>
+                  <span>Imediata colagem e endurecimento de superfícies</span>
                 </div>
               </div>
               
@@ -641,115 +553,139 @@ export default function HomePage() {
           </motion.div>
           
           <motion.div
-            className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8'
+            className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'
             initial='hidden'
             whileInView='visible'
             viewport={{ once: true, amount: 0.2 }}
             variants={staggerChildren}
           >
             <motion.div variants={scaleIn}>
-              <Link href='/produtos/hiperliga'>
-                <Card className='p-6 h-full hover:shadow-lg transition-all duration-300 group cursor-pointer'>
-                  <div className='relative aspect-square mb-4 rounded-lg overflow-hidden'>
-                    <Image
-                      src='/images/official/hiperliga-1.png'
-                      alt='Hiperliga'
-                      fill
-                      className='object-cover group-hover:scale-105 transition-transform duration-300'
-                      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px'
-                    />
-                  </div>
-                  <h3 className='text-xl font-bold mb-2 group-hover:text-brand-primary transition-colors'>Hiperliga</h3>
-                  <p className='text-muted-foreground mb-4 text-sm leading-relaxed'>
-                    Argamassa polimérica de alto desempenho, pronta para uso, ideal para assentamento de tijolos e blocos.
-                  </p>
-                  <div className='flex items-center text-brand-primary font-medium'>
-                    <span>Saiba mais</span>
-                    <ArrowRightIcon className='ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform' />
-                  </div>
-                </Card>
-              </Link>
+              <ProductExpandableCard
+                title="Hiperliga"
+                keyBenefit="Argamassa polimérica 100% sustentável - 3x mais rápida"
+                image="/images/official/hiperliga-1.png"
+                price="A partir de R$ 89,90"
+                specifications={[
+                  { label: "Rendimento", value: "20m²/balde 3kg", highlight: true },
+                  { label: "Equivalência", value: "1 bisnaga = 60kg", highlight: true },
+                  { label: "Tempo de cura", value: "72 horas" },
+                  { label: "Economia de água", value: "21x menor" },
+                  { label: "Durabilidade", value: "25+ anos" },
+                  { label: "Resistência", value: "40 MPa" }
+                ]}
+                applications={[
+                  "Assentamento de pisos",
+                  "Revestimento de paredes",
+                  "Reparos estruturais",
+                  "Regularização",
+                  "Uso interno e externo"
+                ]}
+                benefits={[
+                  "100% sustentável - 0% água, areia, cimento e cal",
+                  "Aplicação 3x mais rápida que métodos tradicionais",
+                  "Alto rendimento - até 20m² por balde de 3kg",
+                  "Aderência superior em múltiplas superfícies",
+                  "Redução de até 35% nos custos finais"
+                ]}
+                technicalDetails="Produto tecnológico à base de mistura homogênea de agregados minerais com granulometria controlada e aditivos químicos. Desenvolvida com mais de 10 anos de experiência em construção civil, mineração e química."
+                onLearnMore={() => window.location.href = '/produtos/hiperliga'}
+              />
             </motion.div>
             
             <motion.div variants={scaleIn}>
-              <Link href='/produtos/texturas'>
-                <Card className='p-6 h-full hover:shadow-lg transition-all duration-300 group cursor-pointer'>
-                  <div className='relative aspect-square mb-4 rounded-lg overflow-hidden'>
-                    <Image
-                      src='/images/03_products/grafiato-textura-rustica.webp'
-                      alt='Texturas - Grafiato Textura Rústica'
-                      fill
-                      className='object-cover group-hover:scale-105 transition-transform duration-300'
-                      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px'
-                    />
-                    <div className='absolute top-2 right-2'>
-                      <PaintBrushIcon className='h-6 w-6 text-white drop-shadow' />
-                    </div>
-                  </div>
-                  <h3 className='text-xl font-bold mb-2 group-hover:text-brand-primary transition-colors'>Texturas</h3>
-                  <p className='text-muted-foreground mb-4 text-sm leading-relaxed'>
-                    Revestimentos acrílicos texturizados para acabamentos decorativos de paredes internas e externas.
-                  </p>
-                  <div className='flex items-center text-brand-primary font-medium'>
-                    <span>Saiba mais</span>
-                    <ArrowRightIcon className='ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform' />
-                  </div>
-                </Card>
-              </Link>
+              <ProductExpandableCard
+                title="Texturas"
+                keyBenefit="Acabamento rústico texturizado para interno e externo"
+                image="/images/03_products/grafiato-textura-rustica.webp"
+                price="A partir de R$ 45,90"
+                specifications={[
+                  { label: "Rendimento", value: "7-10m²/25kg", highlight: true },
+                  { label: "Granulometria", value: "Controlada" },
+                  { label: "Aplicação", value: "Rolo/Pincel" },
+                  { label: "Secagem", value: "4-6 horas" },
+                  { label: "Diluição", value: "Até 10% água" }
+                ]}
+                applications={[
+                  "Paredes internas",
+                  "Fachadas externas",
+                  "Acabamentos decorativos",
+                  "Sobre massa corrida",
+                  "Ambientes residenciais"
+                ]}
+                benefits={[
+                  "Efeito texturizado rústico único",
+                  "Excelente cobertura e uniformidade",
+                  "Resistente às intempéries",
+                  "Fácil aplicação com rolo ou pincel",
+                  "Boa durabilidade em ambientes externos"
+                ]}
+                technicalDetails="Revestimento texturizado pronto para uso, ideal para criação de efeitos decorativos em paredes internas e externas."
+                onLearnMore={() => window.location.href = '/produtos/texturas'}
+              />
             </motion.div>
             
             <motion.div variants={scaleIn}>
-              <Link href='/produtos/grafiatos'>
-                <Card className='p-6 h-full hover:shadow-lg transition-all duration-300 group cursor-pointer'>
-                  <div className='relative aspect-square mb-4 rounded-lg overflow-hidden'>
-                    <Image
-                      src='/images/03_products/grafiato-acrilico-riscado.webp'
-                      alt='Grafiatos - Revestimento Acrílico Riscado'
-                      fill
-                      className='object-cover group-hover:scale-105 transition-transform duration-300'
-                      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px'
-                    />
-                    <div className='absolute top-2 right-2'>
-                      <SwatchIcon className='h-6 w-6 text-white drop-shadow' />
-                    </div>
-                  </div>
-                  <h3 className='text-xl font-bold mb-2 group-hover:text-brand-primary transition-colors'>Grafiatos</h3>
-                  <p className='text-muted-foreground mb-4 text-sm leading-relaxed'>
-                    Grafiato acrílico riscado, revestimento texturizado decorativo para paredes com efeito rústico.
-                  </p>
-                  <div className='flex items-center text-brand-primary font-medium'>
-                    <span>Saiba mais</span>
-                    <ArrowRightIcon className='ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform' />
-                  </div>
-                </Card>
-              </Link>
+              <ProductExpandableCard
+                title="Grafiatos"
+                keyBenefit="Revestimento acrílico texturizado de alta durabilidade"
+                image="/images/03_products/grafiato-acrilico-riscado.webp"
+                price="A partir de R$ 52,90"
+                specifications={[
+                  { label: "Base", value: "Acrílica", highlight: true },
+                  { label: "Efeito", value: "Impermeável" },
+                  { label: "Durabilidade", value: "10+ anos" },
+                  { label: "Aplicação", value: "Rolo/Desempenadeira" },
+                  { label: "Cores", value: "Múltiplas opções" }
+                ]}
+                applications={[
+                  "Fachadas residenciais",
+                  "Edifícios comerciais",
+                  "Muros e paredes externas",
+                  "Ambientes de alta umidade",
+                  "Proteção impermeável"
+                ]}
+                benefits={[
+                  "Alta resistência às intempéries",
+                  "Efeito impermeável natural",
+                  "Durabilidade superior a 10 anos",
+                  "Proteção contra fungos e mofo",
+                  "Múltiplas opções de textura e cor"
+                ]}
+                technicalDetails="Revestimento acrílico texturizado formulado para máxima resistência e proteção em ambientes externos severos."
+                onLearnMore={() => window.location.href = '/produtos/grafiatos'}
+              />
             </motion.div>
             
             <motion.div variants={scaleIn}>
-              <Link href='/produtos/tintas'>
-                <Card className='p-6 h-full hover:shadow-lg transition-all duration-300 group cursor-pointer'>
-                  <div className='relative aspect-square mb-4 rounded-lg overflow-hidden'>
-                    <Image
-                      src='/images/03_products/tinta-emborrachada.webp'
-                      alt='Tintas - Tinta Emborrachada'
-                      fill
-                      className='object-cover group-hover:scale-105 transition-transform duration-300'
-                      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px'
-                    />
-                    <div className='absolute top-2 right-2'>
-                      <BuildingOffice2Icon className='h-6 w-6 text-white drop-shadow' />
-                    </div>
-                  </div>
-                  <h3 className='text-xl font-bold mb-2 group-hover:text-brand-primary transition-colors'>Tintas</h3>
-                  <p className='text-muted-foreground mb-4 text-sm leading-relaxed'>
-                    Tintas acrílicas e emborrachadas com alta resistência e flexibilidade para superfícies internas e externas.
-                  </p>
-                  <div className='flex items-center text-brand-primary font-medium'>
-                    <span>Saiba mais</span>
-                    <ArrowRightIcon className='ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform' />
-                  </div>
-                </Card>
-              </Link>
+              <ProductExpandableCard
+                title="Tintas"
+                keyBenefit="Tintas profissionais com ação anti-mofo"
+                image="/images/03_products/tinta-emborrachada.webp"
+                price="A partir de R$ 78,90"
+                specifications={[
+                  { label: "Rendimento", value: "300m²/18L", highlight: true },
+                  { label: "Cobertura", value: "Excelente" },
+                  { label: "Anti-mofo", value: "Ação fungicida" },
+                  { label: "Lavabilidade", value: "Superior" },
+                  { label: "Acabamento", value: "Fosco/Acetinado" }
+                ]}
+                applications={[
+                  "Paredes internas",
+                  "Áreas úmidas",
+                  "Ambientes comerciais",
+                  "Sobre massa corrida",
+                  "Repintura"
+                ]}
+                benefits={[
+                  "Alto rendimento - até 300m² por demão",
+                  "Ação anti-mofo e anti-fungos",
+                  "Excelente cobertura e nivelamento",
+                  "Lavabilidade superior",
+                  "Secagem rápida e uniforme"
+                ]}
+                technicalDetails="Tinta profissional formulada com tecnologia anti-mofo para máxima proteção e durabilidade em ambientes internos."
+                onLearnMore={() => window.location.href = '/produtos/tintas'}
+              />
             </motion.div>
           </motion.div>
         </Container>
@@ -1001,7 +937,17 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* Stats Section */}
+      {/* Calculator Section - Interest Stage CTA */}
+      <InterestCTASection
+        page="home"
+        customContent={{
+          title: "Calcule Sua Economia Real",
+          subtitle: "Veja exatamente quanto você pode economizar com Hiperliga no seu projeto"
+        }}
+        className="bg-gradient-to-br from-green-600 to-emerald-800"
+      />
+
+      {/* Interactive Stats Section */}
       <Section id='stats-section'>
         <Container>
           <motion.div
@@ -1019,169 +965,116 @@ export default function HomePage() {
             </p>
           </motion.div>
           
-          <motion.div
-            className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8'
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.3 }}
-            variants={staggerChildren}
-          >
-            <motion.div variants={scaleIn}>
-              <Card className='p-8 text-center hover:shadow-lg transition-shadow'>
-                <div className='text-4xl lg:text-5xl font-bold text-brand-primary mb-2'>
-                  +{squareMeters}M
-                </div>
-                <div className='text-sm uppercase tracking-wider text-muted-foreground font-medium'>
-                  m² aplicados
-                </div>
-                <div className='text-xs text-muted-foreground mt-2'>
-                  com sucesso comprovado
-                </div>
-              </Card>
-            </motion.div>
-            
-            <motion.div variants={scaleIn}>
-              <Card className='p-8 text-center hover:shadow-lg transition-shadow'>
-                <div className='text-4xl lg:text-5xl font-bold text-brand-primary mb-2'>
-                  {speedMultiplier}x
-                </div>
-                <div className='text-sm uppercase tracking-wider text-muted-foreground font-medium'>
-                  mais rápida
-                </div>
-                <div className='text-xs text-muted-foreground mt-2'>
-                  que métodos tradicionais
-                </div>
-              </Card>
-            </motion.div>
-            
-            <motion.div variants={scaleIn}>
-              <Card className='p-8 text-center hover:shadow-lg transition-shadow'>
-                <div className='text-4xl lg:text-5xl font-bold text-brand-primary mb-2'>
-                  {savings}%
-                </div>
-                <div className='text-sm uppercase tracking-wider text-muted-foreground font-medium'>
-                  de economia
-                </div>
-                <div className='text-xs text-muted-foreground mt-2'>
-                  em custos de material
-                </div>
-              </Card>
-            </motion.div>
-            
-            <motion.div variants={scaleIn}>
-              <Card className='p-8 text-center hover:shadow-lg transition-shadow'>
-                <div className='text-4xl lg:text-5xl font-bold text-brand-primary mb-2'>
-                  {waterSavings}x
-                </div>
-                <div className='text-sm uppercase tracking-wider text-muted-foreground font-medium'>
-                  menos água
-                </div>
-                <div className='text-xs text-muted-foreground mt-2'>
-                  Consumo 21x menor de água
-                </div>
-              </Card>
-            </motion.div>
-          </motion.div>
+          <InteractiveStats
+            variant="card"
+            columns={4}
+            showTooltips={true}
+            animateOnView={true}
+            stagger={true}
+            stats={[
+              {
+                value: 3,
+                label: "m² aplicados",
+                description: "com suporte técnico especializado",
+                icon: <BuildingOffice2Icon className="w-6 h-6" />,
+                prefix: "+",
+                suffix: "M",
+                animate: true,
+                color: "brand-primary",
+                hoverDetails: {
+                  title: "Mais de 3 milhões de m² aplicados",
+                  description: "Nossa experiência de mais de 10 anos no mercado resultou em mais de 3 milhões de metros quadrados aplicados com sucesso, sempre com suporte técnico especializado.",
+                  metrics: [
+                    { label: "Projetos concluídos", value: "500+" },
+                    { label: "Clientes atendidos", value: "200+" },
+                    { label: "Taxa de satisfação", value: "98%" }
+                  ]
+                }
+              },
+              {
+                value: 3,
+                label: "mais rápida",
+                description: "na aplicação vs. tradicional",
+                icon: <RocketLaunchIcon className="w-6 h-6" />,
+                suffix: "x",
+                animate: true,
+                color: "green-600",
+                hoverDetails: {
+                  title: "Aplicação 3x mais rápida",
+                  description: "A tecnologia polimérica da Hiperliga permite aplicação direta sem necessidade de preparação, mistura ou cura prolongada, resultando em velocidade 3x superior.",
+                  metrics: [
+                    { label: "Tempo de preparo", value: "0 min" },
+                    { label: "Tempo de cura", value: "72h vs 7-28 dias" },
+                    { label: "Produtividade", value: "+200%" }
+                  ]
+                }
+              },
+              {
+                value: 35,
+                label: "de economia",
+                description: "nos custos finais da obra",
+                icon: <CurrencyDollarIcon className="w-6 h-6" />,
+                suffix: "%",
+                animate: true,
+                color: "yellow-600",
+                hoverDetails: {
+                  title: "Até 35% de economia",
+                  description: "O alto rendimento da Hiperliga (20m²/balde de 3kg) combinado com a redução de tempo de obra proporciona economia substancial nos custos finais.",
+                  metrics: [
+                    { label: "Redução material", value: "60%" },
+                    { label: "Redução mão de obra", value: "40%" },
+                    { label: "Redução tempo total", value: "50%" }
+                  ]
+                }
+              },
+              {
+                value: 21,
+                label: "menos água",
+                description: "redução no consumo de água",
+                icon: <GlobeAmericasIcon className="w-6 h-6" />,
+                suffix: "x",
+                animate: true,
+                color: "blue-600",
+                hoverDetails: {
+                  title: "21x menos água consumida",
+                  description: "A tecnologia polimérica elimina praticamente o uso de água durante aplicação, contribuindo significativamente para sustentabilidade e preservação de recursos naturais.",
+                  metrics: [
+                    { label: "Água economizada", value: "95%" },
+                    { label: "Impacto ambiental", value: "-90%" },
+                    { label: "Sustentabilidade", value: "100%" }
+                  ]
+                }
+              }
+            ]}
+          />
         </Container>
       </Section>
 
-      {/* Final CTA Section - Optimized Layout Based on Gemini Analysis */}
-      <Section className='bg-gradient-to-br from-brand-primary to-brand-secondary py-16 sm:py-24'>
-        <Container>
-          <div className='grid grid-cols-1 lg:grid-cols-5 gap-x-12 gap-y-12 items-center'>
-            
-            {/* Section 1: Primary CTA (Lead Generation) - 60% width */}
-            <motion.div 
-              className='lg:col-span-3 text-center lg:text-left'
-              initial='hidden'
-              whileInView='visible'
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInUp}
-            >
-              <h2 className='text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4'>
-                Construa o futuro com Hiperliga.
-              </h2>
-              <p className='text-lg text-white/80 max-w-2xl mx-auto lg:mx-0 mb-8'>
-                Receba uma proposta detalhada para o seu projeto. Nossos especialistas estão prontos para ajudar você a integrar a construção sustentável em sua próxima obra.
-              </p>
-              
-              <div className='flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-6 gap-y-4'>
-                <Link href='/contato?orcamento=true'>
-                  <Button 
-                    size='xl' 
-                    className='bg-white hover:bg-gray-100 text-brand-primary shadow-lg hover:scale-105 focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-primary focus:ring-white transition-all duration-300 w-full sm:w-auto font-bold'
-                  >
-                    Solicitar Orçamento
-                  </Button>
-                </Link>
-                
-                <a 
-                  href='tel:+5511999998888' 
-                  className='inline-flex items-center text-base font-medium text-white hover:text-white/80 w-full sm:w-auto justify-center transition-colors'
-                >
-                  <svg className='w-5 h-5 mr-2' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor'>
-                    <path strokeLinecap='round' strokeLinejoin='round' d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 6.75z' />
-                  </svg>
-                  Ligar agora
-                </a>
-              </div>
-            </motion.div>
+      {/* Testimonials Section */}
+      <TestimonialsSection 
+        data={depoimentosData} 
+        showStats={false} 
+        autoPlay={true} 
+        autoPlayInterval={6000}
+        className="py-16 lg:py-24"
+      />
 
-            {/* Section 2: Secondary CTA (Newsletter Signup) - 40% width */}
-            <motion.div 
-              className='lg:col-span-2'
-              initial='hidden'
-              whileInView='visible'
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInUp}
-            >
-              <div className='bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/20'>
-                <h3 className='font-bold text-white text-xl mb-1'>Fique por dentro</h3>
-                <p className='text-white/80 text-sm mb-6'>
-                  Assine nossa newsletter para receber estudos de caso, inovações e notícias do setor.
-                </p>
-                
-                <form onSubmit={handleNewsletterSubmit} className='flex flex-col gap-4'>
-                  <div>
-                    <label htmlFor='email-address' className='sr-only'>Email</label>
-                    <input 
-                      type='email' 
-                      name='email-address' 
-                      id='email-address' 
-                      autoComplete='email' 
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                      className='w-full px-4 py-3 rounded-md bg-white/95 text-gray-900 border-transparent focus:outline-none focus:ring-2 focus:ring-brand-accent placeholder-gray-500'
-                      placeholder='seu.email@empresa.com'
-                    />
-                  </div>
-                  <Button 
-                    type='submit'
-                    className='w-full px-4 py-3 rounded-md bg-brand-accent hover:bg-hiperliga-700 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-brand-accent transition-colors'
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? 'Inscrevendo...' : 'Inscrever-se'}
-                  </Button>
-                </form>
-                
-                <p className='text-xs text-white/60 mt-4 text-center'>
-                  Nós respeitamos sua privacidade. Sem spam.
-                </p>
-                
-                {submitMessage && (
-                  <div className={`mt-4 p-3 rounded-lg text-sm ${
-                    submitMessage.includes('sucesso') ? 'bg-green-500/20 text-green-100' : 'bg-red-500/20 text-red-100'
-                  }`}>
-                    {submitMessage}
-                  </div>
-                )}
-              </div>
-            </motion.div>
+      {/* Decision Stage CTA - High Converting Final Section */}
+      <DecisionCTASection
+        page="home"
+        customContent={{
+          title: "Pronto para Revolucionar Sua Obra?",
+          subtitle: "Junte-se a mais de 3 milhões de m² construídos com Hiperliga. Solicite seu orçamento agora."
+        }}
+        className="py-20"
+      />
 
-          </div>
-        </Container>
-      </Section>
+      {/* Floating CTA - Always visible for immediate contact */}
+      <FloatingCTA 
+        position="bottom-right"
+        showExitIntent={true}
+        autoHide={false}
+      />
     </div>
   )
 }

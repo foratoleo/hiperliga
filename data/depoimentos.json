@@ -1,0 +1,51 @@
+{
+  "estatisticas": {
+    "anosDeMercado": 10,
+    "metrosQuadradosAplicados": "3M+",
+    "diferencial": "suporte técnico e especializado"
+  },
+  "depoimentos": [
+    {
+      "nome": "Lucas M.",
+      "localizacao": "SP",
+      "depoimento": "Produto excelente! A argamassa da Hiperliga é super prática, economizei tempo e sujeira na obra.",
+      "reviews": 3,
+      "categoria": "Profissional da Construção"
+    },
+    {
+      "nome": "Renata C.",
+      "localizacao": "RJ",
+      "depoimento": "Adorei a qualidade! Nunca usei algo tão eficiente e fácil de aplicar quanto a Hiperliga.",
+      "reviews": 7,
+      "categoria": "Consumidor Final"
+    },
+    {
+      "nome": "Carlos A.",
+      "localizacao": "MG",
+      "depoimento": "Achei incrível como rende! Comprei achando que precisaria de mais, mas sobrou produto.",
+      "reviews": 8,
+      "categoria": "Engenheiro Civil"
+    },
+    {
+      "nome": "Fernanda L.",
+      "localizacao": "PR",
+      "depoimento": "Como arquiteta, busco sempre o melhor acabamento. A textura da Hiperliga deixou o projeto sofisticado e os clientes amaram.",
+      "reviews": 5,
+      "categoria": "Arquiteta"
+    },
+    {
+      "nome": "João P.",
+      "localizacao": "BA",
+      "depoimento": "Sou lojista e a Hiperliga é campeã de vendas. Meus clientes sempre voltam satisfeitos e compram de novo.",
+      "reviews": 12,
+      "categoria": "Lojista"
+    },
+    {
+      "nome": "Mariana S.",
+      "localizacao": "RS",
+      "depoimento": "Fiz uma pequena reforma em casa e a Hiperliga foi a solução perfeita. Fácil de usar, sem bagunça e com um resultado profissional.",
+      "reviews": 4,
+      "categoria": "Consumidor Final"
+    }
+  ]
+}

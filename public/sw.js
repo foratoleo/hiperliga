@@ -1,314 +1,456 @@
-// Service Worker for Hiperliga website
-// Implements caching strategies for better performance
+// public/sw.js - Advanced Service Worker for Hiperliga Performance Optimization
+const CACHE_VERSION = 'hiperliga-v7-performance'
+const CACHE_NAMES = {
+  STATIC: `${CACHE_VERSION}-static`,
+  DYNAMIC: `${CACHE_VERSION}-dynamic`,
+  IMAGES: `${CACHE_VERSION}-images`,
+  DATA: `${CACHE_VERSION}-data`,
+  FONTS: `${CACHE_VERSION}-fonts`
+}
 
-const CACHE_NAME = 'hiperliga-v1'
-const STATIC_CACHE_NAME = 'hiperliga-static-v1'
-const DYNAMIC_CACHE_NAME = 'hiperliga-dynamic-v1'
-const IMAGE_CACHE_NAME = 'hiperliga-images-v1'
+// Cache duration configurations (in milliseconds)
+const CACHE_STRATEGIES = {
+  STATIC_ASSETS: 365 * 24 * 60 * 60 * 1000, // 1 year
+  DYNAMIC_CONTENT: 7 * 24 * 60 * 60 * 1000, // 7 days
+  IMAGES: 30 * 24 * 60 * 60 * 1000, // 30 days
+  DATA: 24 * 60 * 60 * 1000, // 24 hours
+  FONTS: 365 * 24 * 60 * 60 * 1000, // 1 year
+  API: 60 * 60 * 1000 // 1 hour
+}
 
-// Define what to cache
-const STATIC_ASSETS = [
+// Performance monitoring
+let performanceMetrics = {
+  cacheHits: 0,
+  cacheMisses: 0,
+  networkRequests: 0,
+  totalResponseTime: 0,
+  startTime: Date.now()
+}
+
+// Critical resources to preload
+const CRITICAL_RESOURCES = [
   '/',
   '/produtos',
-  '/contato',
   '/sobre',
-  '/faq',
   '/manifest.json',
-  '/images/logo-hiperliga.svg',
-  '/_next/static/css/app/layout.css',
-  '/_next/static/chunks/webpack.js',
-  '/_next/static/chunks/main-app.js',
+  '/images/logo/hiperliga-logo.png',
+  '/images/hero/hero-background.jpg',
+  '/data/empresa.json'
 ]
 
-const CACHE_STRATEGIES = {
-  // Cache first for static assets
-  CACHE_FIRST: 'cache-first',
-  
-  // Network first for API calls and dynamic content
-  NETWORK_FIRST: 'network-first',
-  
-  // Stale while revalidate for updated content
-  STALE_WHILE_REVALIDATE: 'stale-while-revalidate',
-  
-  // Network only for critical updates
-  NETWORK_ONLY: 'network-only',
-}
-
-// Cache TTL settings (in seconds)
-const CACHE_TTL = {
-  STATIC: 86400 * 30,    // 30 days for static assets
-  DYNAMIC: 86400 * 7,    // 7 days for dynamic content
-  IMAGES: 86400 * 14,    // 14 days for images
-  API: 300,              // 5 minutes for API responses
-}
-
-// Install event - cache static assets
+// Install event - cache critical resources
 self.addEventListener('install', (event) => {
-  console.log('Service Worker installing...')
+  console.log('[SW] Installing service worker...')
   
   event.waitUntil(
-    caches.open(STATIC_CACHE_NAME)
-      .then(cache => {
-        console.log('Caching static assets')
-        return cache.addAll(STATIC_ASSETS)
+    Promise.all([
+      caches.open(CACHE_NAMES.STATIC).then((cache) => {
+        console.log('[SW] Caching critical resources')
+        return cache.addAll(CRITICAL_RESOURCES.map(url => new Request(url, {
+          cache: 'reload' // Force fresh fetch during install
+        })))
+      }),
+      // Preload fonts
+      caches.open(CACHE_NAMES.FONTS).then((cache) => {
+        return cache.addAll([
+          'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
+          'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'
+        ])
       })
-      .then(() => {
-        console.log('Static assets cached')
-        return self.skipWaiting()
-      })
-      .catch(error => {
-        console.error('Failed to cache static assets:', error)
-      })
+    ]).then(() => {
+      console.log('[SW] Installation complete')
+      // Skip waiting to activate new SW immediately
+      return self.skipWaiting()
+    })
   )
 })
 
-// Activate event - clean up old caches
+// Activate event - cleanup old caches
 self.addEventListener('activate', (event) => {
-  console.log('Service Worker activating...')
+  console.log('[SW] Activating service worker...')
   
   event.waitUntil(
-    caches.keys()
-      .then(cacheNames => {
+    Promise.all([
+      // Clean up old caches
+      caches.keys().then((cacheNames) => {
         return Promise.all(
-          cacheNames.map(cacheName => {
-            if (cacheName !== STATIC_CACHE_NAME && 
-                cacheName !== DYNAMIC_CACHE_NAME && 
-                cacheName !== IMAGE_CACHE_NAME) {
-              console.log('Deleting old cache:', cacheName)
+          cacheNames
+            .filter(cacheName => 
+              cacheName.startsWith('hiperliga-') && 
+              !Object.values(CACHE_NAMES).includes(cacheName)
+            )
+            .map(cacheName => {
+              console.log('[SW] Deleting old cache:', cacheName)
               return caches.delete(cacheName)
-            }
-          })
+            })
         )
-      })
-      .then(() => {
-        console.log('Service Worker activated')
-        return self.clients.claim()
-      })
+      }),
+      // Take control of all clients
+      self.clients.claim()
+    ]).then(() => {
+      console.log('[SW] Activation complete')
+    })
   )
 })
 
-// Fetch event - implement caching strategies
+// Fetch event - intelligent caching strategies
 self.addEventListener('fetch', (event) => {
-  const { request } = event
+  const request = event.request
   const url = new URL(request.url)
   
-  // Skip non-GET requests
-  if (request.method !== 'GET') {
-    return
-  }
-  
-  // Skip chrome-extension requests
-  if (url.protocol === 'chrome-extension:') {
+  // Skip non-GET requests and chrome-extension requests
+  if (request.method !== 'GET' || url.protocol === 'chrome-extension:') {
     return
   }
 
-  event.respondWith(handleRequest(request))
+  // Performance tracking
+  const startTime = performance.now()
+  performanceMetrics.networkRequests++
+
+  event.respondWith(
+    handleRequest(request, startTime)
+      .then(response => {
+        const endTime = performance.now()
+        performanceMetrics.totalResponseTime += (endTime - startTime)
+        return response
+      })
+  )
 })
 
-// Main request handler
-async function handleRequest(request) {
+// Main request handler with intelligent routing
+async function handleRequest(request, startTime) {
   const url = new URL(request.url)
   
   try {
     // Route to appropriate strategy based on request type
     if (isStaticAsset(url)) {
-      return cacheFirst(request, STATIC_CACHE_NAME)
+      return await cacheFirst(request, CACHE_NAMES.STATIC, CACHE_STRATEGIES.STATIC_ASSETS)
     }
     
-    if (isImage(url)) {
-      return cacheFirst(request, IMAGE_CACHE_NAME)
+    if (isImageRequest(url)) {
+      return await cacheFirst(request, CACHE_NAMES.IMAGES, CACHE_STRATEGIES.IMAGES, true)
     }
     
-    if (isApiRequest(url)) {
-      return networkFirst(request, DYNAMIC_CACHE_NAME)
+    if (isFontRequest(url)) {
+      return await cacheFirst(request, CACHE_NAMES.FONTS, CACHE_STRATEGIES.FONTS)
     }
     
-    if (isPageRequest(url)) {
-      return staleWhileRevalidate(request, DYNAMIC_CACHE_NAME)
+    if (isDataRequest(url)) {
+      return await staleWhileRevalidate(request, CACHE_NAMES.DATA, CACHE_STRATEGIES.DATA)
     }
     
-    // Default to network first
-    return networkFirst(request, DYNAMIC_CACHE_NAME)
+    if (isAPIRequest(url)) {
+      return await networkFirst(request, CACHE_NAMES.DATA, CACHE_STRATEGIES.API)
+    }
+    
+    // Default: stale-while-revalidate for HTML pages
+    return await staleWhileRevalidate(request, CACHE_NAMES.DYNAMIC, CACHE_STRATEGIES.DYNAMIC_CONTENT)
     
   } catch (error) {
-    console.error('Request failed:', error)
-    return handleOffline(request)
+    console.error('[SW] Request handling error:', error)
+    return await handleOffline(request)
   }
 }
 
-// Cache first strategy - for static assets
-async function cacheFirst(request, cacheName) {
-  const cachedResponse = await caches.match(request)
+// Cache-first strategy (for static assets)
+async function cacheFirst(request, cacheName, maxAge, optimizeImages = false) {
+  const cache = await caches.open(cacheName)
+  const cached = await cache.match(request)
   
-  if (cachedResponse) {
-    // Check if cache is still fresh
-    const cacheTime = getCacheTime(cachedResponse)
-    const now = Date.now()
-    const maxAge = CACHE_TTL.STATIC * 1000
-    
-    if (now - cacheTime < maxAge) {
-      return cachedResponse
-    }
+  if (cached && !isExpired(cached, maxAge)) {
+    performanceMetrics.cacheHits++
+    return cached
   }
   
+  performanceMetrics.cacheMisses++
+  
   try {
-    const networkResponse = await fetch(request)
+    const response = await fetch(request)
     
-    if (networkResponse && networkResponse.status === 200) {
-      const cache = await caches.open(cacheName)
+    if (response.ok) {
+      // Clone response for caching
+      const responseToCache = response.clone()
       
-      // Add timestamp to response headers
-      const responseWithTime = new Response(networkResponse.body, {
-        status: networkResponse.status,
-        statusText: networkResponse.statusText,
-        headers: {
-          ...networkResponse.headers,
-          'sw-cache-time': Date.now().toString()
-        }
+      // Add cache timestamp
+      const headers = new Headers(responseToCache.headers)
+      headers.set('sw-cache-timestamp', Date.now().toString())
+      
+      const cachedResponse = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
       })
       
-      cache.put(request, responseWithTime.clone())
-      return responseWithTime
+      // Cache the response
+      cache.put(request, cachedResponse)
     }
     
-    return networkResponse
-    
+    return response
   } catch (error) {
-    return cachedResponse || handleOffline(request)
+    // Return cached version even if expired when network fails
+    if (cached) {
+      return cached
+    }
+    throw error
   }
 }
 
-// Network first strategy - for dynamic content
-async function networkFirst(request, cacheName) {
+// Network-first strategy (for API calls)
+async function networkFirst(request, cacheName, maxAge) {
+  const cache = await caches.open(cacheName)
+  
   try {
-    const networkResponse = await fetch(request)
+    const response = await fetch(request)
     
-    if (networkResponse && networkResponse.status === 200) {
-      const cache = await caches.open(cacheName)
-      cache.put(request, networkResponse.clone())
+    if (response.ok) {
+      const responseToCache = response.clone()
+      const headers = new Headers(responseToCache.headers)
+      headers.set('sw-cache-timestamp', Date.now().toString())
+      
+      const cachedResponse = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
+      })
+      
+      cache.put(request, cachedResponse)
     }
     
-    return networkResponse
-    
+    return response
   } catch (error) {
-    const cachedResponse = await caches.match(request)
-    return cachedResponse || handleOffline(request)
+    // Fallback to cache
+    const cached = await cache.match(request)
+    if (cached && !isExpired(cached, maxAge)) {
+      performanceMetrics.cacheHits++
+      return cached
+    }
+    throw error
   }
 }
 
-// Stale while revalidate strategy - for pages
-async function staleWhileRevalidate(request, cacheName) {
-  const cachedResponse = await caches.match(request)
+// Stale-while-revalidate strategy (for dynamic content)
+async function staleWhileRevalidate(request, cacheName, maxAge) {
+  const cache = await caches.open(cacheName)
+  const cached = await cache.match(request)
   
-  const fetchPromise = fetch(request)
-    .then(networkResponse => {
-      if (networkResponse && networkResponse.status === 200) {
-        const cache = caches.open(cacheName)
-        cache.then(c => c.put(request, networkResponse.clone()))
-      }
-      return networkResponse
-    })
-    .catch(error => {
-      console.warn('Network request failed:', error)
-    })
+  // Fetch and cache in background
+  const fetchPromise = fetch(request).then(response => {
+    if (response.ok) {
+      const responseToCache = response.clone()
+      const headers = new Headers(responseToCache.headers)
+      headers.set('sw-cache-timestamp', Date.now().toString())
+      
+      const cachedResponse = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
+      })
+      
+      cache.put(request, cachedResponse)
+    }
+    return response
+  }).catch(error => {
+    console.warn('[SW] Background fetch failed:', error)
+  })
   
-  return cachedResponse || fetchPromise
+  // Return cached version immediately if available
+  if (cached) {
+    performanceMetrics.cacheHits++
+    
+    // Only revalidate if cache is stale
+    if (isExpired(cached, maxAge)) {
+      fetchPromise // Fire and forget
+    }
+    
+    return cached
+  }
+  
+  // No cache, wait for network
+  performanceMetrics.cacheMisses++
+  return await fetchPromise
 }
 
-// Helper functions
+// Utility functions
 function isStaticAsset(url) {
-  return url.pathname.startsWith('/_next/static/') ||
-         url.pathname.startsWith('/static/') ||
-         url.pathname.endsWith('.js') ||
-         url.pathname.endsWith('.css') ||
-         url.pathname.endsWith('.woff2') ||
-         url.pathname.endsWith('.woff')
+  return /\.(js|css|woff2?|ttf|eot)$/i.test(url.pathname) ||
+         url.pathname.startsWith('/_next/static/')
 }
 
-function isImage(url) {
-  return url.pathname.startsWith('/images/') ||
-         url.pathname.match(/\.(jpg|jpeg|png|gif|webp|avif|svg)$/i)
+function isImageRequest(url) {
+  return /\.(png|jpg|jpeg|webp|avif|svg|gif|ico)$/i.test(url.pathname) ||
+         url.pathname.startsWith('/images/') ||
+         url.pathname.includes('image')
 }
 
-function isApiRequest(url) {
+function isFontRequest(url) {
+  return /\.(woff2?|ttf|eot)$/i.test(url.pathname) ||
+         url.hostname === 'fonts.googleapis.com' ||
+         url.hostname === 'fonts.gstatic.com'
+}
+
+function isDataRequest(url) {
+  return /\.json$/i.test(url.pathname) ||
+         url.pathname.startsWith('/data/')
+}
+
+function isAPIRequest(url) {
   return url.pathname.startsWith('/api/')
 }
 
-function isPageRequest(url) {
-  return url.pathname.endsWith('/') ||
-         (!url.pathname.includes('.') && !url.pathname.startsWith('/api/'))
+function isExpired(response, maxAge) {
+  const cacheTimestamp = response.headers.get('sw-cache-timestamp')
+  if (!cacheTimestamp) return true
+  
+  const age = Date.now() - parseInt(cacheTimestamp)
+  return age > maxAge
 }
 
-function getCacheTime(response) {
-  const cacheTime = response.headers.get('sw-cache-time')
-  return cacheTime ? parseInt(cacheTime) : 0
-}
-
-function handleOffline(request) {
+// Offline fallback
+async function handleOffline(request) {
   const url = new URL(request.url)
   
-  // Return offline page for page requests
-  if (isPageRequest(url)) {
-    return caches.match('/offline') || 
-           new Response('Offline - please check your connection', {
-             status: 503,
-             headers: { 'Content-Type': 'text/plain' }
-           })
-  }
-  
-  // Return placeholder for images
-  if (isImage(url)) {
-    return new Response('', {
-      status: 503,
-      headers: { 'Content-Type': 'image/svg+xml' }
+  if (request.destination === 'document') {
+    // Return cached homepage for navigation requests when offline
+    const cache = await caches.open(CACHE_NAMES.DYNAMIC)
+    const cached = await cache.match('/')
+    if (cached) return cached
+    
+    // Create offline page
+    return new Response(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Hiperliga - Offline</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+            body { font-family: system-ui, sans-serif; text-align: center; padding: 20px; }
+            .offline { max-width: 400px; margin: 100px auto; }
+            h1 { color: #1a365d; }
+            p { color: #666; line-height: 1.5; }
+            button { background: #1a365d; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; }
+            button:hover { background: #2c5282; }
+          </style>
+        </head>
+        <body>
+          <div class="offline">
+            <h1>🌐 Você está offline</h1>
+            <p>Não foi possível conectar à internet. Verifique sua conexão e tente novamente.</p>
+            <button onclick="window.location.reload()">Tentar novamente</button>
+          </div>
+        </body>
+      </html>
+    `, {
+      status: 200,
+      headers: { 'Content-Type': 'text/html' }
     })
   }
   
-  return new Response('Network error', {
+  // For other requests, try to return from cache
+  const cache = await caches.open(CACHE_NAMES.STATIC)
+  const cached = await cache.match(request)
+  if (cached) return cached
+  
+  // Final fallback
+  return new Response('Resource not available offline', { 
     status: 503,
-    headers: { 'Content-Type': 'text/plain' }
+    statusText: 'Service Unavailable'
   })
 }
 
-// Background sync for failed requests
-self.addEventListener('sync', (event) => {
-  if (event.tag === 'background-sync') {
-    event.waitUntil(doBackgroundSync())
-  }
-})
-
-async function doBackgroundSync() {
-  // Handle background sync logic here
-  console.log('Background sync triggered')
-}
-
-// Push notification handling
-self.addEventListener('push', (event) => {
-  if (event.data) {
-    const data = event.data.json()
+// Performance analytics
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'GET_CACHE_STATS') {
+    const runtime = Date.now() - performanceMetrics.startTime
+    const avgResponseTime = performanceMetrics.networkRequests > 0 
+      ? performanceMetrics.totalResponseTime / performanceMetrics.networkRequests 
+      : 0
     
-    const options = {
-      body: data.body,
-      icon: '/images/icon-192x192.png',
-      badge: '/images/badge-72x72.png',
-      vibrate: [100, 50, 100],
-      data: data.data,
-      actions: data.actions
+    const stats = {
+      ...performanceMetrics,
+      runtime,
+      avgResponseTime: Math.round(avgResponseTime),
+      cacheHitRate: performanceMetrics.networkRequests > 0 
+        ? Math.round((performanceMetrics.cacheHits / performanceMetrics.networkRequests) * 100)
+        : 0
     }
     
-    event.waitUntil(
-      self.registration.showNotification(data.title, options)
-    )
+    event.ports[0].postMessage(stats)
+  }
+  
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting()
   }
 })
 
-// Notification click handling
-self.addEventListener('notificationclick', (event) => {
-  event.notification.close()
-  
-  const url = event.notification.data?.url || '/'
-  
-  event.waitUntil(
-    clients.openWindow(url)
-  )
+// Background sync for performance metrics
+self.addEventListener('sync', (event) => {
+  if (event.tag === 'performance-metrics') {
+    event.waitUntil(sendPerformanceMetrics())
+  }
 })
+
+async function sendPerformanceMetrics() {
+  if (performanceMetrics.networkRequests === 0) return
+  
+  const metrics = {
+    cacheHitRate: Math.round((performanceMetrics.cacheHits / performanceMetrics.networkRequests) * 100),
+    avgResponseTime: Math.round(performanceMetrics.totalResponseTime / performanceMetrics.networkRequests),
+    totalRequests: performanceMetrics.networkRequests,
+    timestamp: Date.now()
+  }
+  
+  try {
+    // Send to analytics if available
+    if (self.gtag) {
+      self.gtag('event', 'sw_performance', {
+        event_category: 'service_worker',
+        event_label: 'cache_performance',
+        value: metrics.cacheHitRate,
+        custom_parameter_1: metrics.avgResponseTime
+      })
+    }
+    
+    // Reset metrics after sending
+    performanceMetrics = {
+      cacheHits: 0,
+      cacheMisses: 0,
+      networkRequests: 0,
+      totalResponseTime: 0,
+      startTime: Date.now()
+    }
+  } catch (error) {
+    console.warn('[SW] Failed to send performance metrics:', error)
+  }
+}
+
+// Periodic cache cleanup (every 24 hours)
+setInterval(async () => {
+  try {
+    const now = Date.now()
+    
+    for (const cacheName of Object.values(CACHE_NAMES)) {
+      const cache = await caches.open(cacheName)
+      const requests = await cache.keys()
+      
+      for (const request of requests) {
+        const response = await cache.match(request)
+        if (response) {
+          const timestamp = response.headers.get('sw-cache-timestamp')
+          if (timestamp) {
+            const age = now - parseInt(timestamp)
+            // Remove entries older than their max age + 24 hours buffer
+            if (age > CACHE_STRATEGIES.STATIC_ASSETS + (24 * 60 * 60 * 1000)) {
+              await cache.delete(request)
+            }
+          }
+        }
+      }
+    }
+    
+    console.log('[SW] Cache cleanup completed')
+  } catch (error) {
+    console.error('[SW] Cache cleanup failed:', error)
+  }
+}, 24 * 60 * 60 * 1000) // 24 hours
+
+console.log('[SW] Hiperliga Service Worker loaded - Version:', CACHE_VERSION)

@@ -1,0 +1,472 @@
+/* Progressive Disclosure and Micro-interaction Animations */
+
+/* Base animation utilities */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-scale-bounce {
+  animation: scale-bounce 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.5s ease-out;
+}
+
+.animate-fade-in-scale {
+  animation: fade-in-scale 0.4s ease-out;
+}
+
+.animate-reveal-left {
+  animation: reveal-left 0.6s ease-out;
+}
+
+.animate-reveal-right {
+  animation: reveal-right 0.6s ease-out;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: ripple 0.6s ease-out;
+}
+
+/* Keyframe definitions */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+  }
+}
+
+@keyframes scale-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal-left {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal-right {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Progressive reveal specific animations */
+.progressive-reveal-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.progressive-reveal-item {
+  transition: all 0.3s ease-out;
+}
+
+.progressive-reveal-item.newly-revealed {
+  animation: progressive-reveal-in 0.5s ease-out;
+}
+
+@keyframes progressive-reveal-in {
+  0% {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-2px) scale(1.01);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Hover reveal animations */
+.hover-reveal-trigger:hover .hover-reveal-content {
+  animation: hover-reveal-fade-in 0.3s ease-out;
+}
+
+@keyframes hover-reveal-fade-in {
+  0% {
+    transform: translateY(10px) scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Interactive stats animations */
+.stat-item {
+  transition: all 0.3s ease-out;
+}
+
+.stat-item:hover {
+  animation: stat-hover 0.3s ease-out;
+}
+
+@keyframes stat-hover {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    transform: translateY(-2px) scale(1.01);
+  }
+}
+
+/* Counter animation */
+.counter-animating {
+  animation: counter-pulse 0.1s ease-out;
+}
+
+@keyframes counter-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Expandable card animations */
+.expandable-card {
+  transition: all 0.3s ease-out;
+}
+
+.expandable-card.expanding {
+  animation: card-expand 0.4s ease-out;
+}
+
+.expandable-card.collapsing {
+  animation: card-collapse 0.4s ease-out;
+}
+
+@keyframes card-expand {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@keyframes card-collapse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+/* Micro-interactions for buttons */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ripple effect for interactive elements */
+.ripple-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-effect::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ripple-effect:active::before {
+  width: 300px;
+  height: 300px;
+  transition: width 0s, height 0s;
+}
+
+/* Progressive loading indicators */
+.loading-skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2s infinite;
+}
+
+/* Scroll-based animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal-stagger {
+  transition-delay: var(--delay, 0s);
+}
+
+/* Parallax effect utilities */
+.parallax-element {
+  transform: translateY(var(--parallax-offset, 0px));
+  transition: transform 0.1s ease-out;
+}
+
+/* Focus and accessibility enhancements */
+.focus-visible:focus-visible {
+  outline: 2px solid hsl(var(--brand-primary));
+  outline-offset: 2px;
+  animation: focus-ring 0.3s ease-out;
+}
+
+@keyframes focus-ring {
+  0% {
+    outline-width: 0;
+    outline-offset: 0;
+  }
+  100% {
+    outline-width: 2px;
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .parallax-element {
+    transform: none !important;
+  }
+  
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .hover-reveal-content {
+    border: 2px solid;
+  }
+  
+  .stat-item:hover {
+    border: 2px solid;
+  }
+  
+  .expandable-card {
+    border-width: 2px;
+  }
+}
+
+/* Performance optimizations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.animation-running {
+  will-change: transform, opacity, scale;
+}
+
+.animation-complete {
+  will-change: auto;
+}
+
+/* CSS Variables for dynamic animations */
+:root {
+  --animation-duration-fast: 0.15s;
+  --animation-duration-normal: 0.3s;
+  --animation-duration-slow: 0.5s;
+  --animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Utility classes for common micro-interactions */
+.hover-lift {
+  transition: transform var(--animation-duration-normal) var(--animation-easing);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.hover-scale {
+  transition: transform var(--animation-duration-normal) var(--animation-easing);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow var(--animation-duration-normal) var(--animation-easing);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.click-feedback {
+  transition: transform var(--animation-duration-fast) var(--animation-easing);
+}
+
+.click-feedback:active {
+  transform: scale(0.98);
+}

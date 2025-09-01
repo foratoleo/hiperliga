@@ -1,0 +1,435 @@
+{
+  "products": [
+    {
+      "id": "hiperliga-argamassa-polimerica-3kg",
+      "name": "Hiperliga Argamassa Polimérica",
+      "description": "Uma argamassa polimérica inovadora e pronta para uso que substitui a argamassa convencional com maior rendimento e praticidade. Elimina a necessidade de adicionar água, areia, cimento ou cal, resultando em uma obra mais limpa, rápida e econômica.",
+      "shortDescription": "Argamassa polimérica de alto desempenho, pronta para uso, 100% sustentável.",
+      "features": [
+        "Pronta para uso, sem necessidade de mistura",
+        "Não contém cimento, cal, areia ou água",
+        "Alto rendimento: 3kg de Hiperliga equivalem a 60kg de argamassa tradicional",
+        "Reduz o peso estrutural da construção"
+      ],
+      "technicalSpecs": [
+        {
+          "name": "Rendimento",
+          "value": "20",
+          "unit": "m²",
+          "description": "Até 20m² de assentamento por balde de 3kg"
+        },
+        {
+          "name": "Equivalência",
+          "value": "60",
+          "unit": "kg",
+          "description": "3kg de Hiperliga equivalem a 60kg de argamassa tradicional"
+        },
+        {
+          "name": "Tempo de cura",
+          "value": "72",
+          "unit": "horas",
+          "description": "Tempo para cura total"
+        },
+        {
+          "name": "Composição",
+          "value": "Polímeros aditivados e agregados minerais",
+          "description": "Mistura homogênea de agregados minerais com granulometria controlada e aditivos químicos"
+        }
+      ],
+      "applications": [
+        "Assentamento de tijolos e blocos de vedação",
+        "Reboco em paredes internas e externas", 
+        "Reparos e reformas em alvenaria",
+        "Superfícies de concreto, cerâmica, ferro, alumínio, vidro, pedra e madeira"
+      ],
+      "benefits": [
+        "Economia de até 35% no custo final da obra",
+        "Aplicação 3x mais rápida que argamassa tradicional",
+        "Redução de 21x no uso de água",
+        "Obra mais limpa e sustentável",
+        "Logística e armazenamento simplificados"
+      ],
+      "images": [
+        {
+          "id": "img-hiper-01",
+          "url": "/images/produtos/hiperliga-argamassa-polimerica.jpg",
+          "alt": "Hiperliga Argamassa Polimérica - Balde 3kg",
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "hiperliga",
+        "name": "Hiperliga®",
+        "slug": "hiperliga",
+        "description": "Produtos inovadores de argamassa polimérica"
+      },
+      "packaging": {
+        "weight": "3kg",
+        "dimensions": "Balde plástico",
+        "coverage": "Até 20m² por balde",
+        "shelfLife": "24 meses",
+        "storage": "Local seco e arejado, temperatura ambiente"
+      },
+      "sustainability": {
+        "waterFree": true,
+        "sandFree": true,
+        "cementFree": true,
+        "limeFree": true,
+        "recycledContent": 0,
+        "carbonFootprintReduction": 50,
+        "certifications": ["ISO 14001"]
+      },
+      "slug": "hiperliga-argamassa-polimerica"
+    },
+    {
+      "id": "hiperliga-argamassa-25kg",
+      "name": "Hiperliga Argamassa Polimérica 25kg",
+      "description": "Versão em embalagem de 25kg da revolucionária argamassa polimérica Hiperliga, ideal para obras de maior porte. Mantém todas as características inovadoras da linha Hiperliga com maior rendimento por embalagem.",
+      "shortDescription": "Argamassa polimérica 25kg para obras de grande porte.",
+      "features": [
+        "Embalagem econômica de 25kg",
+        "Pronta para uso, sem necessidade de mistura",
+        "100% sustentável - 0% água, areia, cimento ou cal",
+        "Alto rendimento por embalagem"
+      ],
+      "technicalSpecs": [
+        {
+          "name": "Rendimento",
+          "value": "165",
+          "unit": "m²",
+          "description": "Até 165m² de assentamento por embalagem"
+        },
+        {
+          "name": "Equivalência",
+          "value": "500",
+          "unit": "kg",
+          "description": "25kg equivalem a 500kg de argamassa tradicional"
+        },
+        {
+          "name": "Tempo de cura",
+          "value": "72",
+          "unit": "horas",
+          "description": "Tempo para cura total"
+        }
+      ],
+      "applications": [
+        "Assentamento de tijolos e blocos",
+        "Reboco em grandes áreas",
+        "Obras comerciais e residenciais",
+        "Reparos estruturais"
+      ],
+      "benefits": [
+        "Maior economia em obras grandes",
+        "Menos viagens para transporte",
+        "Redução significativa de resíduos",
+        "Aplicação mais rápida e limpa"
+      ],
+      "images": [
+        {
+          "id": "img-hiper-25-01",
+          "url": "/images/produtos/hiperliga-25kg.jpg", 
+          "alt": "Hiperliga Argamassa Polimérica 25kg",
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "hiperliga",
+        "name": "Hiperliga®",
+        "slug": "hiperliga",
+        "description": "Produtos inovadores de argamassa polimérica"
+      },
+      "packaging": {
+        "weight": "25kg",
+        "dimensions": "Saco plástico resistente",
+        "coverage": "Até 165m²",
+        "shelfLife": "24 meses",
+        "storage": "Local seco e arejado, temperatura ambiente"
+      },
+      "sustainability": {
+        "waterFree": true,
+        "sandFree": true,
+        "cementFree": true,
+        "limeFree": true,
+        "recycledContent": 0,
+        "carbonFootprintReduction": 50,
+        "certifications": ["ISO 14001"]
+      },
+      "slug": "hiperliga-argamassa-25kg"
+    },
+    {
+      "id": "gran-finalle-grafiato-branco-25kg",
+      "name": "Gran Finalle Grafiato Branco 25kg",
+      "description": "Revestimento acrílico texturizado que proporciona um acabamento rústico e decorativo, ideal para proteger e embelezar paredes internas e externas. Sua fórmula especial garante alta durabilidade e resistência às intempéries.",
+      "shortDescription": "Revestimento texturizado para acabamento rústico e decorativo.",
+      "features": [
+        "Acabamento rústico com efeito texturizado",
+        "Uso interno e externo",
+        "Fácil aplicação com desempenadeira",
+        "Disfarça imperfeições da superfície",
+        "Efeito impermeável"
+      ],
+      "technicalSpecs": [
+        {
+          "name": "Rendimento",
+          "value": "7-10",
+          "unit": "m²",
+          "description": "7 a 10m² por embalagem de 25kg"
+        },
+        {
+          "name": "Validade",
+          "value": "24",
+          "unit": "meses",
+          "description": "24 meses a partir da data de fabricação"
+        },
+        {
+          "name": "Secagem",
+          "value": "6-24",
+          "unit": "horas",
+          "description": "6 horas ao toque, 24 horas para cura inicial"
+        },
+        {
+          "name": "Aplicação",
+          "value": "Desempenadeira de aço e PVC",
+          "description": "Misturar com um pouco de água e aplicar"
+        }
+      ],
+      "applications": [
+        "Paredes de alvenaria internas e externas",
+        "Sobre reboco",
+        "Concreto aparente",
+        "Fibrocimento",
+        "Acabamento decorativo"
+      ],
+      "benefits": [
+        "Acabamento decorativo moderno",
+        "Alta resistência e durabilidade",
+        "Proteção contra umidade",
+        "Não pesa no orçamento",
+        "Dispensa manutenção periódica"
+      ],
+      "images": [
+        {
+          "id": "img-grafiato-01",
+          "url": "/images/produtos/grafiato-branco-25kg.jpg",
+          "alt": "Gran Finalle Grafiato Branco 25kg",
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "gran-finalle-grafiato",
+        "name": "Grafiato",
+        "slug": "grafiato",
+        "description": "Revestimentos texturizados para acabamento decorativo"
+      },
+      "packaging": {
+        "weight": "25kg",
+        "dimensions": "Barrica plástica",
+        "coverage": "7 a 10m²",
+        "shelfLife": "24 meses",
+        "storage": "Local seco e arejado, protegido do sol e geada"
+      },
+      "sustainability": {
+        "waterFree": false,
+        "sandFree": false,
+        "cementFree": false,
+        "limeFree": false,
+        "recycledContent": 10,
+        "carbonFootprintReduction": 15,
+        "certifications": ["Baixo VOC"]
+      },
+      "slug": "gran-finalle-grafiato-branco-25kg"
+    },
+    {
+      "id": "gran-finalle-tinta-acrilica-18l",
+      "name": "Gran Finalle Tinta Acrílica Profissional 18L",
+      "description": "Tinta acrílica de alta performance, desenvolvida para uso profissional. Oferece excelente cobertura, acabamento fosco aveludado e ação anti-mofo, garantindo um resultado superior em pinturas internas e externas.",
+      "shortDescription": "Tinta acrílica profissional com ação anti-mofo.",
+      "features": [
+        "Qualidade profissional com alto poder de cobertura",
+        "Ação anti-mofo e anti-fungos",
+        "Acabamento fosco aveludado",
+        "Baixo odor e secagem rápida",
+        "Base água"
+      ],
+      "technicalSpecs": [
+        {
+          "name": "Secagem ao toque",
+          "value": "1",
+          "unit": "hora",
+          "description": "Secagem ao toque em 1 hora"
+        },
+        {
+          "name": "Intervalo entre demãos",
+          "value": "4",
+          "unit": "horas",
+          "description": "4 horas entre demãos"
+        },
+        {
+          "name": "Secagem final",
+          "value": "12",
+          "unit": "horas",
+          "description": "12 horas para secagem final"
+        },
+        {
+          "name": "Rendimento",
+          "value": "300",
+          "unit": "m²",
+          "description": "Até 300m² por demão (18L)"
+        }
+      ],
+      "applications": [
+        "Paredes internas e externas",
+        "Reboco, massa acrílica e texturas",
+        "Concreto e fibrocimento", 
+        "Massa corrida e gesso",
+        "Drywall",
+        "Repintura"
+      ],
+      "benefits": [
+        "Longa durabilidade da cor",
+        "Resistente à lavagem",
+        "Protege contra umidade",
+        "Excelente cobertura",
+        "Fácil aplicação e limpeza"
+      ],
+      "images": [
+        {
+          "id": "img-tinta-01",
+          "url": "/images/produtos/tinta-acrilica-18l.jpg",
+          "alt": "Gran Finalle Tinta Acrílica Profissional 18L",
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "gran-finalle-tintas",
+        "name": "Tintas",
+        "slug": "tintas", 
+        "description": "Tintas de alta qualidade para pintura residencial e comercial"
+      },
+      "packaging": {
+        "weight": "18L",
+        "dimensions": "Lata metálica",
+        "coverage": "Até 300m² por demão",
+        "shelfLife": "24 meses",
+        "storage": "Local seco, ventilado, temperatura entre 5°C e 35°C"
+      },
+      "sustainability": {
+        "waterFree": false,
+        "sandFree": true,
+        "cementFree": true,
+        "limeFree": true,
+        "recycledContent": 5,
+        "carbonFootprintReduction": 20,
+        "certifications": ["Base água", "Baixo VOC"]
+      },
+      "slug": "gran-finalle-tinta-acrilica-18l"
+    },
+    {
+      "id": "gran-finalle-tinta-emborrachada",
+      "name": "Gran Finalle Tinta Emborrachada",
+      "description": "Tinta emborrachada de alta qualidade que oferece proteção superior contra infiltrações e impermeabilização. Ideal para lajes, terraços, muros e áreas sujeitas à umidade constante.",
+      "shortDescription": "Tinta emborrachada para impermeabilização e proteção.",
+      "features": [
+        "Excelente impermeabilização",
+        "Alta elasticidade e flexibilidade",
+        "Resistente a intempéries",
+        "Aderência superior",
+        "Fácil aplicação"
+      ],
+      "technicalSpecs": [
+        {
+          "name": "Rendimento",
+          "value": "4-6",
+          "unit": "m²/L",
+          "description": "4 a 6m² por litro em 2 demãos"
+        },
+        {
+          "name": "Secagem",
+          "value": "2-4",
+          "unit": "horas",
+          "description": "2 a 4 horas entre demãos"
+        },
+        {
+          "name": "Espessura",
+          "value": "200-300",
+          "unit": "mícrons",
+          "description": "Espessura de filme seco"
+        }
+      ],
+      "applications": [
+        "Lajes e terraços",
+        "Calhas e rufos",
+        "Muros de arrimo",
+        "Piscinas e reservatórios",
+        "Áreas molhadas"
+      ],
+      "benefits": [
+        "Proteção total contra infiltrações",
+        "Durabilidade superior",
+        "Mantém flexibilidade por anos",
+        "Resistente a UV",
+        "Economia a longo prazo"
+      ],
+      "images": [
+        {
+          "id": "img-emborrachada-01",
+          "url": "/images/produtos/tinta-emborrachada.jpg",
+          "alt": "Gran Finalle Tinta Emborrachada",
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "gran-finalle-tintas",
+        "name": "Tintas",
+        "slug": "tintas",
+        "description": "Tintas de alta qualidade para pintura residencial e comercial"
+      },
+      "packaging": {
+        "weight": "3.6L",
+        "dimensions": "Lata metálica",
+        "coverage": "14 a 22m² (2 demãos)",
+        "shelfLife": "18 meses",
+        "storage": "Local seco e arejado, protegido do sol"
+      },
+      "sustainability": {
+        "waterFree": false,
+        "sandFree": true,
+        "cementFree": true,
+        "limeFree": true,
+        "recycledContent": 0,
+        "carbonFootprintReduction": 10,
+        "certifications": ["Resistente UV"]
+      },
+      "slug": "gran-finalle-tinta-emborrachada"
+    }
+  ],
+  "categories": [
+    {
+      "id": "hiperliga",
+      "name": "Hiperliga®",
+      "slug": "hiperliga",
+      "description": "Produtos inovadores de argamassa polimérica 100% sustentável",
+      "order": 1
+    },
+    {
+      "id": "gran-finalle-tintas", 
+      "name": "Tintas",
+      "slug": "tintas",
+      "description": "Tintas de alta qualidade para pintura residencial e comercial",
+      "order": 2
+    },
+    {
+      "id": "gran-finalle-grafiato",
+      "name": "Grafiato",
+      "slug": "grafiato", 
+      "description": "Revestimentos texturizados para acabamento decorativo",
+      "order": 3
+    }
+  ],
+  "metadata": {
+    "extractedAt": "2025-08-31T23:00:00.000Z",
+    "sourceUrl": "https://hiperliga.com.br/produtos",
+    "totalProducts": 5,
+    "version": "1.0.0"
+  }
+}

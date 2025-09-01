@@ -174,7 +174,7 @@ const ModalContent = React.forwardRef<HTMLDivElement, ModalContentProps>(
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
                 transition={{ 
                   duration: 0.2,
-                  ease: [0.4, 0, 0.2, 1]
+                  ease: "easeOut"
                 }}
                 className={cn(
                   'relative w-full bg-background rounded-lg shadow-lg border border-border',
@@ -184,7 +184,7 @@ const ModalContent = React.forwardRef<HTMLDivElement, ModalContentProps>(
                   className
                 )}
                 onClick={(e) => e.stopPropagation()}
-                {...props}
+                {...(({ onDrag, onDragEnd, onDragStart, ...rest }) => rest)(props)}
               >
                 {showCloseButton && (
                   <button

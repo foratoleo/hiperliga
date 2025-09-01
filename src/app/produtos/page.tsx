@@ -1,19 +1,14 @@
 'use client'
 
 import * as React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { 
-  ArrowRightIcon,
-  PaintBrushIcon,
-  SwatchIcon,
-  BuildingOffice2Icon,
-  SparklesIcon,
+  FunnelIcon,
+  MagnifyingGlassIcon,
+  Bars3BottomLeftIcon,
+  ViewColumnsIcon,
   CheckIcon,
-  GlobeAmericasIcon,
-  RocketLaunchIcon,
-  CurrencyDollarIcon
+  XMarkIcon
 } from '@heroicons/react/24/outline'
 
 import { Button } from '@/components/ui/button'
@@ -21,6 +16,12 @@ import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
+import ProductCardDetailed from '@/components/ui/product-card-detailed'
+import type { Product, ProductFilters } from '@/types/product'
+import { ProductUtils } from '@/lib/produtos-utils'
+
+// Import the extracted product data
+import productsData from '../../../data/produtos-especificacoes.json'
 
 // Animation variants
 const fadeInUp = {
@@ -37,133 +38,74 @@ const staggerChildren = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3
+      staggerChildren: 0.15,
+      delayChildren: 0.2
     }
   }
 }
 
-const scaleIn = {
-  hidden: { opacity: 0, scale: 0.9 },
+const slideIn = {
+  hidden: { opacity: 0, x: -20 },
   visible: { 
     opacity: 1, 
-    scale: 1,
-    transition: { duration: 0.5, ease: [0.4, 0, 0.2, 1] as const }
+    x: 0,
+    transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] as const }
   }
 }
 
-const products = [
-  {
-    id: 'hiperliga',
-    name: 'Hiperliga',
-    description: 'Argamassa polimérica revolucionária para alvenaria estrutural e de vedação',
-    detailedDescription: 'A Hiperliga é nossa solução principal, uma argamassa polimérica 100% sustentável que elimina completamente o uso de água, areia, cimento e cal. Ideal para construção de alvenaria estrutural e de vedação.',
-    icon: SparklesIcon,
-    image: '/images/03_products/hiperliga/hiperliga-1-optimized.webp',
-    features: [
-      '100% sustentável - 0% água, areia, cimento ou cal',
-      '3x mais rápida que métodos tradicionais',
-      'Até 35% de economia em custos',
-      'Alta resistência e durabilidade',
-      'Aplicação em alvenaria estrutural e vedação'
-    ],
-    applications: [
-      'Alvenaria estrutural',
-      'Paredes de vedação',
-      'Muros e divisórias',
-      'Estruturas residenciais e comerciais'
-    ],
-    benefits: [
-      { icon: GlobeAmericasIcon, title: 'Sustentabilidade', description: 'Zero desperdício de recursos naturais' },
-      { icon: RocketLaunchIcon, title: 'Rapidez', description: '3x mais rápida na aplicação' },
-      { icon: CurrencyDollarIcon, title: 'Economia', description: 'Redução de até 35% nos custos' }
-    ]
-  },
-  {
-    id: 'texturas',
-    name: 'Texturas',
-    description: 'Acabamentos texturizados com alta durabilidade e resistência às intempéries',
-    detailedDescription: 'Nossa linha de texturas oferece acabamentos únicos e duráveis, desenvolvidos com tecnologia avançada para resistir às mais diversas condições climáticas, mantendo a beleza e proteção da sua obra.',
-    icon: PaintBrushIcon,
-    image: '/images/03_products/hiperliga/versatilidade-usar-optimized.webp',
-    features: [
-      'Alta resistência às intempéries',
-      'Variedade de texturas e padrões',
-      'Fácil aplicação e manutenção',
-      'Proteção UV e impermeabilização',
-      'Acabamento profissional duradouro'
-    ],
-    applications: [
-      'Fachadas residenciais',
-      'Edifícios comerciais',
-      'Muros e paredes externas',
-      'Ambientes internos decorativos'
-    ],
-    benefits: [
-      { icon: PaintBrushIcon, title: 'Estética', description: 'Acabamentos únicos e personalizados' },
-      { icon: SparklesIcon, title: 'Durabilidade', description: 'Resistência superior às intempéries' },
-      { icon: CheckIcon, title: 'Facilidade', description: 'Aplicação simples e eficiente' }
-    ]
-  },
-  {
-    id: 'grafiatos',
-    name: 'Grafiatos',
-    description: 'Revestimentos decorativos com efeitos únicos e acabamento profissional',
-    detailedDescription: 'Os Grafiatos Gran Finelle proporcionam efeitos decorativos sofisticados, combinando funcionalidade e beleza. Perfeitos para criar ambientes únicos com acabamento profissional de alta qualidade.',
-    icon: SwatchIcon,
-    image: '/images/03_products/hiperliga/desempenho-e-durabilidade-usar-1024x1024-optimized.webp',
-    features: [
-      'Efeitos decorativos únicos',
-      'Acabamento profissional',
-      'Resistência e durabilidade',
-      'Fácil aplicação com rolo ou desempenadeira',
-      'Variação de granulometrias e cores'
-    ],
-    applications: [
-      'Paredes internas decorativas',
-      'Fachadas com efeito especial',
-      'Ambientes comerciais',
-      'Projetos arquitetônicos diferenciados'
-    ],
-    benefits: [
-      { icon: SwatchIcon, title: 'Design', description: 'Efeitos visuais impressionantes' },
-      { icon: SparklesIcon, title: 'Qualidade', description: 'Acabamento profissional duradouro' },
-      { icon: PaintBrushIcon, title: 'Versatilidade', description: 'Múltiplas opções de aplicação' }
-    ]
-  },
-  {
-    id: 'tintas',
-    name: 'Tintas',
-    description: 'Tintas especiais com tecnologia avançada para proteção e beleza duradouras',
-    detailedDescription: 'Nossa linha de tintas especiais combina tecnologia de ponta com sustentabilidade, oferecendo proteção superior e cores vibrantes que mantêm a beleza da sua obra por muito mais tempo.',
-    icon: BuildingOffice2Icon,
-    image: '/images/03_products/hiperliga/economia-de-espaco-e-material-usar-optimized.webp',
-    features: [
-      'Tecnologia avançada em pigmentação',
-      'Alta cobertura e rendimento',
-      'Proteção UV e antimanchas',
-      'Secagem rápida e uniforme',
-      'Baixo odor e eco-friendly'
-    ],
-    applications: [
-      'Paredes internas e externas',
-      'Fachadas e estruturas metálicas',
-      'Ambientes residenciais e comerciais',
-      'Projetos que exigem alta durabilidade'
-    ],
-    benefits: [
-      { icon: BuildingOffice2Icon, title: 'Proteção', description: 'Defesa superior contra intempéries' },
-      { icon: SparklesIcon, title: 'Beleza', description: 'Cores vibrantes e duradouras' },
-      { icon: GlobeAmericasIcon, title: 'Sustentável', description: 'Fórmula eco-friendly' }
-    ]
-  }
-]
+// Load products from extracted data
+const allProducts: Product[] = productsData.products as Product[]
+const categories = ProductUtils.getCategories(allProducts)
 
 export default function ProductsPage() {
+  const [filters, setFilters] = React.useState<ProductFilters>({
+    category: 'todos',
+    search: '',
+    sortBy: 'name'
+  })
+  const [showFilters, setShowFilters] = React.useState(false)
+  const [viewMode, setViewMode] = React.useState<'grid' | 'list'>('grid')
+  
+  // Filter and sort products
+  const filteredProducts = React.useMemo(() => {
+    let filtered = allProducts
+    
+    // Apply category filter
+    if (filters.category && filters.category !== 'todos') {
+      filtered = ProductUtils.filterByCategory(filtered, filters.category)
+    }
+    
+    // Apply search filter
+    if (filters.search) {
+      filtered = ProductUtils.searchProducts(filtered, filters.search)
+    }
+    
+    // Apply sorting
+    if (filters.sortBy) {
+      filtered = ProductUtils.sortProducts(filtered, filters.sortBy)
+    }
+    
+    return filtered
+  }, [filters])
+  
+  // Handle filter changes
+  const updateFilters = (newFilters: Partial<ProductFilters>) => {
+    setFilters(prev => ({ ...prev, ...newFilters }))
+  }
+  
+  const clearFilters = () => {
+    setFilters({ category: 'todos', search: '', sortBy: 'name' })
+  }
+  
+  const activeFiltersCount = [
+    filters.category !== 'todos' ? 1 : 0,
+    filters.search ? 1 : 0
+  ].reduce((a, b) => a + b, 0)
+
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section */}
-      <Section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-brand-primary via-brand-secondary to-brand-primary text-white overflow-hidden">
+      <Section className="relative min-h-[60vh] flex items-center bg-gradient-to-br from-brand-primary via-brand-secondary to-brand-primary text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0 bg-[url('/images/03_products/hiperliga/pattern-bg2-optimized.webp')] opacity-10" />
         
@@ -176,7 +118,7 @@ export default function ProductsPage() {
           >
             <motion.div variants={fadeInUp}>
               <Badge className="mb-6 bg-white/20 text-white border-white/30 hover:bg-white/30">
-                🏗️ Soluções Completas para Construção
+                🏗️ {allProducts.length} Produtos Disponíveis
               </Badge>
             </motion.div>
             
@@ -184,158 +126,233 @@ export default function ProductsPage() {
               className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
               variants={fadeInUp}
             >
-              Nossos Produtos
+              Catálogo de Produtos
             </motion.h1>
             
             <motion.p 
               className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white/90 leading-relaxed"
               variants={fadeInUp}
             >
-              Descubra nossa linha completa de produtos inovadores para todas as etapas da sua construção
+              Linha completa de produtos inovadores com especificações técnicas detalhadas
             </motion.p>
           </motion.div>
         </Container>
       </Section>
 
-      {/* Products Grid Section */}
-      <Section>
+      {/* Filters and Search Section */}
+      <Section className="py-8 bg-muted/30">
         <Container>
           <motion.div
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
+            className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-between"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={staggerChildren}
+            viewport={{ once: true, amount: 0.3 }}
+            variants={slideIn}
           >
-            {products.map((product) => {
-              const IconComponent = product.icon
-              return (
-                <motion.div key={product.id} variants={scaleIn}>
-                  <Card className="p-8 h-full hover:shadow-xl transition-all duration-300 group">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-                      {/* Product Image */}
-                      <div className="relative aspect-square rounded-xl overflow-hidden">
-                        <Image
-                          src={product.image}
-                          alt={product.name}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
-                        />
-                        <div className="absolute top-3 right-3">
-                          <div className="p-2 rounded-sm bg-white/90 backdrop-blur">
-                            <IconComponent className="h-6 w-6 text-brand-primary" />
-                          </div>
-                        </div>
-                      </div>
-                      
-                      {/* Product Info */}
-                      <div className="space-y-4">
-                        <div>
-                          <h3 className="text-2xl font-bold mb-2 group-hover:text-brand-primary transition-colors">
-                            {product.name}
-                          </h3>
-                          <p className="text-muted-foreground mb-4">
-                            {product.detailedDescription}
-                          </p>
-                        </div>
-                        
-                        {/* Features */}
-                        <div>
-                          <h4 className="font-semibold mb-3">Características principais:</h4>
-                          <ul className="space-y-2">
-                            {product.features.slice(0, 3).map((feature, idx) => (
-                              <li key={idx} className="flex items-start gap-2 text-sm">
-                                <CheckIcon className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                <span>{feature}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        {/* CTA */}
-                        <div className="pt-4">
-                          <Link href={`/produtos/${product.id}`}>
-                            <Button className="w-full group/btn">
-                              Saiba mais sobre {product.name}
-                              <ArrowRightIcon className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </Card>
-                </motion.div>
-              )
-            })}
+            {/* Search */}
+            <div className="flex-1 max-w-md">
+              <div className="relative">
+                <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <input
+                  type="text"
+                  placeholder="Buscar produtos..."
+                  value={filters.search}
+                  onChange={(e) => updateFilters({ search: e.target.value })}
+                  className="w-full pl-10 pr-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-colors"
+                />
+              </div>
+            </div>
+            
+            {/* Controls */}
+            <div className="flex flex-wrap gap-2">
+              {/* Category Filter */}
+              <select
+                value={filters.category}
+                onChange={(e) => updateFilters({ category: e.target.value })}
+                className="px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-colors bg-white"
+              >
+                <option value="todos">Todas as categorias</option>
+                {categories.map((category) => (
+                  <option key={category.id} value={category.slug}>
+                    {category.name}
+                  </option>
+                ))}
+              </select>
+              
+              {/* Sort */}
+              <select
+                value={filters.sortBy}
+                onChange={(e) => updateFilters({ sortBy: e.target.value as any })}
+                className="px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-colors bg-white"
+              >
+                <option value="name">Ordenar por nome</option>
+                <option value="category">Ordenar por categoria</option>
+                <option value="coverage">Ordenar por rendimento</option>
+              </select>
+              
+              {/* View Mode */}
+              <div className="flex border border-border rounded-lg overflow-hidden">
+                <button
+                  onClick={() => setViewMode('grid')}
+                  className={`px-3 py-2 transition-colors ${
+                    viewMode === 'grid' 
+                      ? 'bg-brand-primary text-white' 
+                      : 'bg-white hover:bg-muted/50'
+                  }`}
+                >
+                  <ViewColumnsIcon className="h-4 w-4" />
+                </button>
+                <button
+                  onClick={() => setViewMode('list')}
+                  className={`px-3 py-2 transition-colors ${
+                    viewMode === 'list' 
+                      ? 'bg-brand-primary text-white' 
+                      : 'bg-white hover:bg-muted/50'
+                  }`}
+                >
+                  <Bars3BottomLeftIcon className="h-4 w-4" />
+                </button>
+              </div>
+              
+              {/* Clear Filters */}
+              {activeFiltersCount > 0 && (
+                <Button variant="outline" onClick={clearFilters} size="sm">
+                  <XMarkIcon className="h-4 w-4 mr-1" />
+                  Limpar ({activeFiltersCount})
+                </Button>
+              )}
+            </div>
+          </motion.div>
+          
+          {/* Results Summary */}
+          <motion.div
+            className="mt-4 flex items-center justify-between text-sm text-muted-foreground"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={slideIn}
+          >
+            <span>
+              {filteredProducts.length} produto{filteredProducts.length !== 1 ? 's' : ''} encontrado{filteredProducts.length !== 1 ? 's' : ''}
+              {filters.search && (
+                <> para "<strong>{filters.search}</strong>"
+                </>
+              )}
+            </span>
           </motion.div>
         </Container>
       </Section>
+      
+      {/* Products Grid/List Section */}
+      <Section>
+        <Container>
+          {filteredProducts.length === 0 ? (
+            <motion.div
+              className="text-center py-16"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInUp}
+            >
+              <div className="mb-4 text-muted-foreground">
+                <MagnifyingGlassIcon className="h-16 w-16 mx-auto mb-4" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Nenhum produto encontrado</h3>
+              <p className="text-muted-foreground mb-4">
+                Tente ajustar seus filtros ou termos de busca
+              </p>
+              <Button variant="outline" onClick={clearFilters}>
+                Limpar Filtros
+              </Button>
+            </motion.div>
+          ) : (
+            <motion.div
+              className={`grid gap-6 ${
+                viewMode === 'grid'
+                  ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
+                  : 'grid-cols-1 max-w-4xl mx-auto'
+              }`}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={staggerChildren}
+            >
+              {filteredProducts.map((product, index) => (
+                <ProductCardDetailed
+                  key={product.id}
+                  product={product}
+                  priority={index < 3}
+                  showCalculator={true}
+                  showSustainability={true}
+                />
+              ))}
+            </motion.div>
+          )}
+        </Container>
+      </Section>
 
-      {/* Benefits Comparison Section */}
+      {/* Statistics Section */}
       <Section className="bg-muted/30">
         <Container>
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-12"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInUp}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Vantagens dos Produtos Gran Finelle
+              Nossos Produtos em Números
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Todos os nossos produtos compartilham os mesmos compromissos com qualidade, sustentabilidade e inovação
+              Dados reais extraídos de especificações técnicas e casos de uso
             </p>
           </motion.div>
           
           <motion.div
-            className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={staggerChildren}
           >
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 text-center h-full">
-                <div className="mb-4 flex justify-center">
-                  <div className="p-3 rounded-sm bg-green-100 text-green-600">
-                    <GlobeAmericasIcon className="h-8 w-8" />
-                  </div>
+            <motion.div variants={slideIn}>
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-brand-primary mb-2">
+                  {allProducts.length}
                 </div>
-                <h3 className="text-xl font-bold mb-3">Sustentabilidade</h3>
-                <p className="text-muted-foreground">
-                  Produtos desenvolvidos com consciência ambiental, reduzindo o impacto na natureza
-                </p>
+                <div className="text-sm text-muted-foreground">Produtos</div>
+                <div className="text-xs text-muted-foreground mt-1">Disponíveis</div>
               </Card>
             </motion.div>
             
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 text-center h-full">
-                <div className="mb-4 flex justify-center">
-                  <div className="p-3 rounded-sm bg-blue-100 text-blue-600">
-                    <SparklesIcon className="h-8 w-8" />
-                  </div>
+            <motion.div variants={slideIn}>
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">
+                  {categories.length}
                 </div>
-                <h3 className="text-xl font-bold mb-3">Qualidade Superior</h3>
-                <p className="text-muted-foreground">
-                  Tecnologia avançada garantindo resultados profissionais e duradouros
-                </p>
+                <div className="text-sm text-muted-foreground">Categorias</div>
+                <div className="text-xs text-muted-foreground mt-1">Diferentes</div>
               </Card>
             </motion.div>
             
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 text-center h-full">
-                <div className="mb-4 flex justify-center">
-                  <div className="p-3 rounded-sm bg-yellow-100 text-yellow-600">
-                    <CurrencyDollarIcon className="h-8 w-8" />
-                  </div>
+            <motion.div variants={slideIn}>
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">
+                  21x
                 </div>
-                <h3 className="text-xl font-bold mb-3">Custo-Benefício</h3>
-                <p className="text-muted-foreground">
-                  Economia real com produtos que oferecem maior rendimento e eficiência
-                </p>
+                <div className="text-sm text-muted-foreground">Menos Água</div>
+                <div className="text-xs text-muted-foreground mt-1">Hiperliga</div>
+              </Card>
+            </motion.div>
+            
+            <motion.div variants={slideIn}>
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">
+                  35%
+                </div>
+                <div className="text-sm text-muted-foreground">Economia</div>
+                <div className="text-xs text-muted-foreground mt-1">Média</div>
               </Card>
             </motion.div>
           </motion.div>
@@ -353,21 +370,22 @@ export default function ProductsPage() {
             variants={fadeInUp}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Precisa de Ajuda para Escolher?
+              Precisa de Mais Informações?
             </h2>
             <p className="text-xl mb-8 text-white/90">
-              Nossa equipe especializada está pronta para orientar você na escolha do produto ideal para seu projeto
+              Nossa equipe técnica pode ajudar com especificações detalhadas, cálculos personalizados e orientações de aplicação
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contato">
-                <Button size="lg" className="bg-white text-brand-primary hover:bg-white/90">
-                  <ArrowRightIcon className="mr-2 h-5 w-5" />
-                  Solicitar Orientação
-                </Button>
-              </Link>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Ver Catálogo Completo
+              <Button size="lg" className="bg-white text-brand-primary hover:bg-white/90" asChild>
+                <a href="/contato">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <a href="/faq">
+                  Ver Perguntas Frequentes
+                </a>
               </Button>
             </div>
           </motion.div>

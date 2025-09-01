@@ -1,0 +1,73 @@
+{
+  "corporateImages": [
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga.png",
+      "category": "logo",
+      "filename": "logo_hiperliga.png",
+      "description": "Logo principal da Hiperliga"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga_white.png",
+      "category": "logo",
+      "filename": "logo_hiperliga_white.png", 
+      "description": "Logo Hiperliga em branco"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/hiperliga-1.png",
+      "category": "product",
+      "filename": "hiperliga-1.png",
+      "description": "Produto Hiperliga - embalagem"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/01.webp",
+      "category": "benefits",
+      "filename": "beneficio-01.webp",
+      "description": "Velocidade em sua obra"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/02.webp",
+      "category": "benefits",
+      "filename": "beneficio-02.webp",
+      "description": "5 Benefícios da Hiperliga"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2020/12/hiperliga_produto_1.jpeg",
+      "category": "product",
+      "filename": "hiperliga_produto_aplicacao.jpeg",
+      "description": "Produto Hiperliga em aplicação"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/100-sustentavel-usar.png",
+      "category": "sustainability",
+      "filename": "100-sustentavel.png",
+      "description": "Selo 100% sustentável"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/economia-de-espaco-e-material-usar.png",
+      "category": "benefits",
+      "filename": "economia-espaco-material.png",
+      "description": "Economia de espaço e material"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/versatilidade-usar.png",
+      "category": "benefits",
+      "filename": "versatilidade.png",
+      "description": "Versatilidade de aplicação"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/desempenho-e-durabilidade-usar-1024x1024.png",
+      "category": "benefits",
+      "filename": "desempenho-durabilidade.png",
+      "description": "Desempenho e durabilidade superior"
+    }
+  ],
+  "categories": {
+    "logo": "Company logos and branding",
+    "product": "Product images and packaging",
+    "benefits": "Product benefits and features illustrations",
+    "sustainability": "Environmental and sustainability badges"
+  },
+  "totalImages": 10,
+  "extractedFrom": "https://hiperliga.com.br",
+  "extractedAt": "2025-01-31T00:00:00Z"
+}

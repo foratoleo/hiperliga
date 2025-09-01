@@ -5,6 +5,9 @@
 /* Google Fonts - Inter and Roboto - Optimized for mobile performance */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
 
+/* Progressive Disclosure and Micro-interaction Animations */
+@import './animations.css';
+
 @layer base {
   :root {
     /* Hiperliga Semantic Color System */

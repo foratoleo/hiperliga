@@ -39,3 +39,4 @@ export {
   Spinner as IconSpinner,
   BrandIcon
 } from './icon'
+export { TestimonialCard } from './testimonial-card'

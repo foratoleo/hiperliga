@@ -1,0 +1,81 @@
+{
+  "timestamp": "2025-08-31T23:26:11.648Z",
+  "summary": {
+    "total": 10,
+    "downloaded": 10,
+    "failed": 0,
+    "skipped": 0
+  },
+  "results": [
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga.png",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/logo/logo_hiperliga.png",
+      "filename": "logo_hiperliga.png",
+      "category": "logo",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/logo_hiperliga_white.png",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/logo/logo_hiperliga_white.png",
+      "filename": "logo_hiperliga_white.png",
+      "category": "logo",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/hiperliga-1.png",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/product/hiperliga-1.png",
+      "filename": "hiperliga-1.png",
+      "category": "product",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/01.webp",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/benefits/beneficio-01.webp",
+      "filename": "beneficio-01.webp",
+      "category": "benefits",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/04/02.webp",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/benefits/beneficio-02.webp",
+      "filename": "beneficio-02.webp",
+      "category": "benefits",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2020/12/hiperliga_produto_1.jpeg",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/product/hiperliga_produto_aplicacao.jpeg",
+      "filename": "hiperliga_produto_aplicacao.jpeg",
+      "category": "product",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/100-sustentavel-usar.png",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/sustainability/100-sustentavel.png",
+      "filename": "100-sustentavel.png",
+      "category": "sustainability",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/economia-de-espaco-e-material-usar.png",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/benefits/economia-espaco-material.png",
+      "filename": "economia-espaco-material.png",
+      "category": "benefits",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/versatilidade-usar.png",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/benefits/versatilidade.png",
+      "filename": "versatilidade.png",
+      "category": "benefits",
+      "status": "success"
+    },
+    {
+      "url": "https://hiperliga.com.br/wp-content/uploads/2025/08/desempenho-e-durabilidade-usar-1024x1024.png",
+      "filepath": "/Users/forato/PROJECTS/hiperliga/public/images/empresa/benefits/desempenho-durabilidade.png",
+      "filename": "desempenho-durabilidade.png",
+      "category": "benefits",
+      "status": "success"
+    }
+  ]
+}

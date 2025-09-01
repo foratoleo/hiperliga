@@ -153,11 +153,17 @@ export class FIDOptimizer {
     // Override setTimeout for better task scheduling
     const originalSetTimeout = window.setTimeout
     
-    window.setTimeout = (callback: Function, delay: number = 0, ...args: any[]) => {
+    window.setTimeout = (callback: TimerHandler, delay: number = 0, ...args: any[]) => {
       if (delay === 0) {
         // Use scheduler.postTask if available, otherwise fall back
         if ('scheduler' in window && 'postTask' in (window as any).scheduler) {
-          return (window as any).scheduler.postTask(() => callback(...args), { priority: 'user-blocking' })
+          return (window as any).scheduler.postTask(() => {
+            if (typeof callback === 'function') {
+              return callback(...args)
+            } else if (typeof callback === 'string') {
+              return eval(callback)
+            }
+          }, { priority: 'user-blocking' })
         }
       }
       

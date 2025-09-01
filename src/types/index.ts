@@ -230,3 +230,6 @@ export interface AppError {
   details?: Record<string, unknown>
   timestamp: Date
 }
+
+// Re-export testimonial types
+export * from './testimonials'
